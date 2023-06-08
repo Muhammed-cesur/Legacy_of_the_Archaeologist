@@ -6,8 +6,8 @@ LOTA Games
 
 ## Takım Elemanları
 
-- Muhammed Cesur: Product Owner
-- Süeda Karaoğlu: Scrum Master
+- Muhammed Cesur: Product Owner/Developer
+- Süeda Karaoğlu: Scrum Master/Delevoper
 - Mehmet Furkan Acer: Team Member/Developer
 - Dilara Arkan: Team Member/Developer
 - Ata Güneş: Team Member/Developer
@@ -18,26 +18,23 @@ Legacy of the Archaeologist
 
 ## Ürün Açıklaması
 
-- Movie App uygulamamız ile insanların izlemek istediği filmlere ve dizilere daha kolay karar vermesini sağlayacağız. İçerisinde binlerce filmi barındıran uygulamamız aynı zamanda Netflix, Prime vb. platformlarda yayınlanıp yayınlanmadığını ve IMDB puanlarını da gösterecek.
+- Oyun bir Third Person RPG ve bulmacaları çözerken gizemli bir adayı keşfettiğiniz bir keşif-macera oyunudur. Low poly grafiklere sahip olan oyunda, açık bir dünyada maceralara atılabilir ve bulmacaları çözebilirsiniz. Oyunda, çevreyle etkileşime geçmeli ve sırları ortaya çıkarmalısınız.
+Karakterimiz gezgin bir arkeolog ve kullandığı aletler ile oyun ilerledikçe daha da geliştirilebilir envantere sahip olacak. Bu aletler etkileşimi tetikleyecek. Mistik parçaları ve taşları koruyan canavarlarla dövüşeceğiz.
 
 ## Ürün Özellikleri
 
-- Filmleri türüne göre ayırma
-- Filmlerin yönetmen, aktör, aktris vb. bilgilerini posteriyle birlikte gösterme
-- IMDB ve Rotten Tomatoes puanlarını gösterme
-- Netflix'te ve Prime'da bulunurluğunu gösterme
+- RPG
+- Third Person 
+- Low Poly
+- Keşif-Bulmaca-Macera
 
 ## Hedef Kitle
 
-- Netflix kullanıcıları
-- Prime kullanıcıları
-- Sinema severler
-- Dizi severler
-- 15 - 65 yaş arası kullanıcılar
+- Genel Kitle
 
 ## Product Backlog URL
 
-[Miro Backlog Board](https://miro.com/app/board/uXjVOSSCpsI=/)
+[Miro Backlog Board](https://miro.com/app/board/uXjVMAp3aRY=/?share_link_id=275782820663)
 
 ---
 
