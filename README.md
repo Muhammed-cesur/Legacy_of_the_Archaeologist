@@ -40,6 +40,8 @@ Karakterimiz gezgin bir arkeolog ve kullandığı aletler ile oyun ilerledikçe 
 
 # Sprint 1
 
+- **Sprint Notları**: 08.06.23 tarihinde oyuna karar verildi. Planlama ve görev atama yapıldı, proje yönetim aracı olarak miro tercih edildi. Görevler ve ayrıntıları Miro'dan her gün takip ediliyor.
+
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 400 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi.
