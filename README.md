@@ -40,7 +40,7 @@ Karakterimiz gezgin bir arkeolog ve kullandığı aletler ile oyun ilerledikçe 
 
 # Sprint 1
 
-- **Sprint Notları**: 08.06.23 tarihinde oyuna karar verildi. Planlama ve görev atama yapıldı, proje yönetim aracı olarak miro tercih edildi. Görevler ve ayrıntıları Miro'dan her gün takip ediliyor.
+- **Sprint Notları**: 08.06.23 tarihinde oyuna karar verildi. Planlama ve görev atama yapıldı, proje yönetim aracı olarak miro tercih edildi. Görevler ve ayrıntıları Miro'dan her gün takip ediliyor. Mavi renk görevler programlama, kırmızı renk görevler genel, mor renk görevler ise kullanıcı hikayeselerini ifade etmektedir. İlk sprint için kullanıcı hikayesi bulamadık.
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
