@@ -394,7 +394,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2709092999683663886}
-  m_LocalRotation: {x: 0.047631975, y: 0.0000000021483564, z: -1.02446746e-10, w: 0.99886495}
+  m_LocalRotation: {x: 0.047631975, y: -0.0000000021483564, z: 1.02446746e-10, w: 0.99886495}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1610,7 +1610,7 @@ MonoBehaviour:
   rotationSpeed: 100
   jumpForce: 5
   runMultiplier: 1.5
-  cameraTransform: {fileID: 0}
+  cameraTransform: {fileID: 4060710650359090766}
 --- !u!1 &7962270092795946581
 GameObject:
   m_ObjectHideFlags: 3
@@ -1684,7 +1684,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5935949530702129051}
-  m_LocalRotation: {x: 0.047607023, y: -0.032331314, z: 0.0015417545, w: 0.9983416}
+  m_LocalRotation: {x: 0.047607023, y: -0.03233132, z: 0.0015417547, w: 0.9983416}
   m_LocalPosition: {x: -51.42008, y: 1.2999997, z: -35.511402}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
