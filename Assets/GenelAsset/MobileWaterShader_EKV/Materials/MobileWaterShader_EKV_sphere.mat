@@ -98,8 +98,8 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _DiffTex:
         m_Texture: {fileID: 2800000, guid: c303a54fa00412a43864cdfb529bb202, type: 3}
-        m_Scale: {x: 2, y: 2}
-        m_Offset: {x: -0.00015, y: -0.00012}
+        m_Scale: {x: 50, y: 50}
+        m_Offset: {x: 1, y: 1}
     - _Diffuse:
         m_Texture: {fileID: 2800000, guid: aa701e5be2dbcd24aad4fb9c3ca284da, type: 3}
         m_Scale: {x: 500, y: 500}
@@ -138,7 +138,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: a2356ab4a4fb5f74c83096735dc7dc9d, type: 3}
-        m_Scale: {x: 2, y: 2}
+        m_Scale: {x: 10, y: 10}
         m_Offset: {x: 0, y: 0}
     - _MainTexRing:
         m_Texture: {fileID: 0}
@@ -261,7 +261,7 @@ Material:
     - _AlbedoContrast: 0.76
     - _AlbedoIntensity: 1.71
     - _Ambient: 0.2
-    - _Attenuation: 0.3207598
+    - _Attenuation: 0.226
     - _BLENDING: 1
     - _Brightness: 0.7615226
     - _BumpReflectionStr: 0.5
@@ -304,8 +304,8 @@ Material:
     - _Fade: 0
     - _FadeLimit: 0.1
     - _FarTilingDistance: 0
-    - _FlowOffset: 0.99
-    - _FlowStrength: 0.1
+    - _FlowOffset: 0.14
+    - _FlowStrength: 0.25
     - _Fluffiness: 0.75
     - _FoamAmplitude: 16
     - _FoamBlend: 0
@@ -357,7 +357,7 @@ Material:
     - _LowIntensity: 1
     - _MainDetailFlow: 0
     - _MainDetailScale: 3
-    - _MainTexRot: 0
+    - _MainTexRot: 114
     - _MediumTilingDistance: 0
     - _Metallic: 0.322
     - _MicrowaveScale: 1
@@ -409,7 +409,7 @@ Material:
     - _Radius: 1
     - _RampLevels: 2
     - _RealtimeReflectionIntensity: 0
-    - _RefStrength: 0.35
+    - _RefStrength: 0.476
     - _ReflToRefrExponent: 1
     - _Reflect: 1
     - _Reflection: 1
@@ -438,7 +438,7 @@ Material:
     - _SoftFactor: 0.0015
     - _Specular: 0
     - _SpecularHighlights: 1
-    - _Speed: 0.283
+    - _Speed: 0.1
     - _SpeedX: 0.1
     - _SpeedY: 5
     - _SrcBlend: 5
@@ -470,7 +470,7 @@ Material:
     - _AlbedoColor: {r: 0.18280526, g: 0.3903058, b: 0.49056602, a: 1}
     - _BaseColor: {r: 0, g: 0, b: 0, a: 0}
     - _BlendColor: {r: 0.29411763, g: 0.29411763, b: 0.29411763, a: 1}
-    - _Color: {r: 0.22801706, g: 0.4470518, b: 0.7924528, a: 0.6745098}
+    - _Color: {r: 0.75, g: 0.8472222, b: 1, a: 0.6745098}
     - _Color1: {r: 0, g: 0.7735849, b: 0.7177879, a: 1}
     - _Color2: {r: 0.6698113, g: 0.53079385, b: 0, a: 1}
     - _DeepWaterColor: {r: 0.5, g: 0.2712264, b: 0.2712264, a: 0}
