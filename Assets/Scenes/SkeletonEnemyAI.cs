@@ -1,65 +1,131 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
+
 
 public class SkeletonEnemyAI : MonoBehaviour
 {
-    public float moveSpeed = 3f;
-    public float attackRange = 1.5f;
-    public float attackCooldown = 2f;
+    public Transform player;  // Reference to the player's transform
+    public float detectionRange = 10f;  // Range at which the enemy detects the player
+    public float attackRange = 2f;  // Range at which the enemy attacks the player
+    public float movementSpeed = 2f;  // Speed at which the enemy moves
+    public int maxHealth = 100;  // Maximum health of the enemy
 
-    private Transform player;
-    private Animator animator;
-    private bool isAttacking = false;
-    private bool canAttack = true;
+    private bool isWandering = false; // Flag to indicate if the enemy is currently wandering
+    private float minWanderDelay = 1f; // Minimum delay before changing wander direction
+    private float maxWanderDelay = 3f; // Maximum delay before changing wander direction
+    private float wanderTimer = 0f; // Timer to track the delay for changing wander direction
+
+
+    private Animator animator;  // Animator component for controlling animations
+    private bool isAttacking = false;  // Flag to indicate if the enemy is attacking
+    private int currentHealth;  // Current health of the enemy
 
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
         animator = GetComponent<Animator>();
+        currentHealth = maxHealth;
     }
 
     private void Update()
     {
-        if (!isAttacking)
+        // Calculate the distance between the enemy and the player
+        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+
+        // Check if the player is within the detection range
+        if (distanceToPlayer <= detectionRange)
         {
-            float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+            // Rotate to face the player
+            transform.LookAt(player);
 
-            if (distanceToPlayer > attackRange)
+            // Check if the player is within attack range
+            if (distanceToPlayer <= attackRange)
             {
-                // Move towards the player
-                Vector3 direction = player.position - transform.position;
-                transform.Translate(direction.normalized * moveSpeed * Time.deltaTime, Space.World);
-
-                // Rotate towards the player
-                Quaternion targetRotation = Quaternion.LookRotation(direction);
-                transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, 0.1f);
+                Attack();
             }
             else
             {
-                // Attack the player
-                if (canAttack)
-                {
-                    StartCoroutine(Attack());
-                }
+                Move();
             }
+        }
+        else
+        {
+            Wander();
         }
     }
 
-    private IEnumerator Attack()
+
+    private void Wander()
     {
-        isAttacking = true;
-        canAttack = false;
+        if (!isWandering)
+        {
+            isWandering = true;
 
-        Debug.Log("Enemy attacking = true");
+            // Generate a random delay for changing wander direction
+            float delay = Random.Range(minWanderDelay, maxWanderDelay);
+            wanderTimer = 0f;
 
-        animator.SetTrigger("Attack");
+            // Generate a random direction for wandering
+            Vector3 wanderDirection = Random.insideUnitSphere;
+            wanderDirection.y = 0f; // Ensure no vertical movement
 
-        // Perform attack animation
-        yield return new WaitForSeconds(attackCooldown);
+            // Rotate to face the wander direction
+            transform.rotation = Quaternion.LookRotation(wanderDirection);
 
-        canAttack = true;
-        isAttacking = false;
+            StartCoroutine(WanderDelay(delay));
+        }
+
+        // Move forward in the local Z-axis
+        transform.Translate(Vector3.forward * movementSpeed * Time.deltaTime);
+    }
+
+    private IEnumerator WanderDelay(float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        isWandering = false;
+    }
+
+    private void Move()
+    {
+        // Move towards the player with increased speed
+        transform.Translate(Vector3.forward * (movementSpeed * 2f) * Time.deltaTime);
+    }
+
+    private void Attack()
+    {
+        if (!isAttacking)
+        {
+            // Set isAttacking flag to true
+            isAttacking = true;
+
+            // Play attack animation
+            animator.SetTrigger("Attack");
+
+            // Perform attack logic here
+            // ...
+
+            // Print a message to the console
+            Debug.Log("Enemy attacking = true");
+        }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        // Reduce health by the given damage amount
+        currentHealth -= damage;
+
+        // Check if the enemy is dead
+        if (currentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        // Perform death logic here, such as playing death animation, disabling collider, etc.
+        // ...
+
+        // Destroy the enemy game object after some delay
+        Destroy(gameObject, 1f);
     }
 }
-

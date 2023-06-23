@@ -163,5 +163,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
+  chaseSpeedMultiplier: 1.5
   attackRange: 1.5
   attackCooldown: 2
+  maxHealth: 100
+  wanderRadius: 5
+  wanderTimer: 3
+  player: {fileID: 0}
