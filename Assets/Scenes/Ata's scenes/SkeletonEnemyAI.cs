@@ -11,12 +11,19 @@ public class SkeletonEnemyAI : MonoBehaviour
 
     private bool isWandering = false; // Flag to indicate if the enemy is currently wandering
     private float minWanderDelay = 1f; // Minimum delay before changing wander direction
-    private float maxWanderDelay = 3f; // Maximum delay before changing wander direction
+    private float maxWanderDelay = 5f; // Maximum delay before changing wander direction
     private float wanderTimer = 0f; // Timer to track the delay for changing wander direction
 
     private Animator animator;  // Animator component for controlling animations
     private bool isAttacking = false;  // Flag to indicate if the enemy is attacking
     private int currentHealth;  // Current health of the enemy
+
+
+    private float maxWanderDistance = 2f;  // Maximum distance the enemy can wander in a random direction
+    private float waitDuration = 1f;  // Duration to wait after wandering before starting to wander again
+    private bool isWaiting = false;  // Flag to indicate if the enemy is currently waiting
+    private float waitTimer = 0f;  // Timer to track the wait duration
+
 
     private void Start()
     {
@@ -47,13 +54,29 @@ public class SkeletonEnemyAI : MonoBehaviour
         }
         else
         {
-            Wander();
+            if (isWaiting)
+            {
+                // Update the wait timer
+                waitTimer += Time.deltaTime;
+
+                // Check if the wait duration is over
+                if (waitTimer >= waitDuration)
+                {
+                    isWaiting = false;
+                    wanderTimer = 0f;
+                    Wander();
+                }
+            }
+            else
+            {
+                Wander();
+            }
         }
     }
 
     private void Wander()
     {
-        if (!isWandering)
+        if (!isWandering && !isWaiting)
         {
             isWandering = true;
 
@@ -71,12 +94,28 @@ public class SkeletonEnemyAI : MonoBehaviour
             StartCoroutine(WanderDelay(delay));
         }
 
-        // Move forward in the local Z-axis
-        transform.Translate(Vector3.forward * movementSpeed * Time.deltaTime);
+        if (isWandering && !isWaiting)
+        {
+            // Update the wander timer
+            wanderTimer += Time.deltaTime;
 
-        // Add animation code here for the wandering animation
-        animator.SetFloat("speed", 1f);
-        // Example: animator.SetBool("IsWandering", true);
+            // Check if it's time to change the wander direction
+            if (wanderTimer >= maxWanderDistance / movementSpeed)
+            {
+                isWandering = false;
+                waitTimer = 0f;
+                Wait();
+            }
+            else
+            {
+                // Move forward in the local Z-axis
+                transform.Translate(Vector3.forward * movementSpeed * Time.deltaTime);
+
+                // Add animation code here for the wandering animation
+                animator.SetFloat("speed", 1f);
+                // Example: animator.SetBool("IsWandering", true);
+            }
+        }
     }
 
     private IEnumerator WanderDelay(float delay)
@@ -84,6 +123,19 @@ public class SkeletonEnemyAI : MonoBehaviour
         yield return new WaitForSeconds(delay);
         isWandering = false;
         animator.SetFloat("speed", 0f);
+    }
+
+    private void Wait()
+    {
+        isWaiting = true;
+        animator.SetFloat("speed", 0f);
+        float waitDuration = Random.Range(1f, 5f);
+        StartCoroutine(WaitDelay(waitDuration));
+    }
+
+    private IEnumerator WaitDelay(float duration)
+    {
+        yield return new WaitForSeconds(duration);
     }
 
     private void Move()
@@ -111,13 +163,14 @@ public class SkeletonEnemyAI : MonoBehaviour
             // Print a message to the console
             Debug.Log("Enemy attacking = true");
         }
+        isAttacking = false;
     }
 
     public void TakeDamage(int damage)
     {
         // Reduce health by the given damage amount
         currentHealth -= damage;
-        animator.SetTrigger("attack");
+        animator.SetTrigger("damage");
         // Check if the enemy is dead
         if (currentHealth <= 0)
         {
