@@ -4,7 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Ground
+  - a
+  - objectToDelete
+  - Ball2
+  - Ball1
   layers:
   - Default
   - TransparentFX
