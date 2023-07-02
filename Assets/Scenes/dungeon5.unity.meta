@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Scenes/dungeon5.unity.meta
 guid: 05dfa75c9ef42364ebef02cc39f40eec
+========
+guid: 0723e717287a33848b8d95ee00313450
+>>>>>>>> main:Assets/Scenes/Dungeon 1.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
