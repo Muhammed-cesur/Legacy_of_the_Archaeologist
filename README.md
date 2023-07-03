@@ -88,7 +88,7 @@ Haritanın yoğun dizaynı dolayısıyla oynanışta sıkıntı çıkmış, diza
   ![Screenshot 3](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/d9535842-0700-4096-a556-a9038d8581ec)
   
 - **Sprint Review**: 
-Harita çok büyük olduğu için küçültüldü. Eksiklikler/Unutulanlar görüldükçe not edilerek öncelikli görevler haline getirildi, bundan sonra da böyle devam edilecek. Bayramdan dolayı görevlerde gecikme olsa da sadece çözülemeyen birkaç sorun kaldı ve omlar da diğer sprinte kaldı. Teslime bir hafta kala oyunun neredeyse tamamen bitmesi planlanıyor. Son haftada hatalar ve eksikliklerin düzenlenmesine ayrılacak. Review katılımcıları: Süeda Karaoğlu, Muhammed Cesur, Mehmet Furkan Acer, Dilara Arkan, Ata Güneş.
+Harita çok büyük olduğu için küçültüldü. Eksiklikler/Unutulanlar görüldükçe not edilerek öncelikli görevler haline getirildi, bundan sonra da böyle devam edilecek. Bayramdan dolayı görevlerde gecikme olsa da sadece çözülemeyen birkaç sorun kaldı ve onlar da diğer sprinte kaldı. Teslime bir hafta kala oyunun neredeyse tamamen bitmesi planlanıyor. Son haftada hatalar ve eksikliklerin düzenlenmesine ayrılacak. Review katılımcıları: Süeda Karaoğlu, Muhammed Cesur, Mehmet Furkan Acer, Dilara Arkan, Ata Güneş.
 
 - **Sprint Retrospective:**
 
