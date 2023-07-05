@@ -8,6 +8,8 @@ TagManager:
   - objectToDelete
   - Ball2
   - Ball1
+  - Ground
+  - Enemy
   layers:
   - Default
   - TransparentFX
