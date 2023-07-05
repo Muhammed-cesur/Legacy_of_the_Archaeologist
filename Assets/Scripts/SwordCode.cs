@@ -1,6 +1,5 @@
 // PlayerBlade.cs
 using UnityEngine;
-using System.Collections;
 
 public class PlayerBlade : MonoBehaviour
 {
@@ -8,12 +7,26 @@ public class PlayerBlade : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        SkeletonEnemyAI enemy = other.GetComponent<SkeletonEnemyAI>(); // Assuming you have a SkeletonEnemyAI script attached to the enemy object
+        SkeletonEnemyAI skeletonEnemy = other.GetComponent<SkeletonEnemyAI>();
+        SpiderEnemyAI spiderEnemy = other.GetComponent<SpiderEnemyAI>();
+        SpiderRangeEnemyAI spiderRangeEnemy = other.GetComponent<SpiderRangeEnemyAI>();
+        PolygonalMetalonAI polygonalMetalonEnemy = other.GetComponent<PolygonalMetalonAI>();
 
-        if (enemy != null)
+        if (skeletonEnemy != null)
         {
-            Debug.Log(enemy.currentHealth);
-            enemy.TakeDamage(damageAmount);
+            skeletonEnemy.TakeDamage(damageAmount);
+        }
+        else if (spiderEnemy != null)
+        {
+            spiderEnemy.TakeDamage(damageAmount);
+        }
+        else if (spiderRangeEnemy != null)
+        {
+            spiderRangeEnemy.TakeDamage(damageAmount);
+        }
+        else if (polygonalMetalonEnemy != null)
+        {
+            polygonalMetalonEnemy.TakeDamage(damageAmount);
         }
     }
 }
