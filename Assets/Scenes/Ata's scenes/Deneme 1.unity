@@ -562,15 +562,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9207188251001636573, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.13844897
+      value: 0.13844898
       objectReference: {fileID: 0}
     - target: {fileID: 9207188251001636573, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.00000003299913
+      value: 1.7251901e-15
       objectReference: {fileID: 0}
     - target: {fileID: 9207188251001636573, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.000000004613122
+      value: -9.608992e-17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -877,6 +877,10 @@ PrefabInstance:
       objectReference: {fileID: 4675697315282122157, guid: 30825fa0e452b5e4c86d0db9288e8c24, type: 3}
     - target: {fileID: 8412470507016712920, guid: bb6bda55a51854e4da199e05298d9191, type: 3}
       propertyPath: itemDropPrefabs.Array.data[1]
+      value: 
+      objectReference: {fileID: 9076450756865421581, guid: d436c68ae705dc4498700b73b70a4cf3, type: 3}
+    - target: {fileID: 8412470507016712920, guid: bb6bda55a51854e4da199e05298d9191, type: 3}
+      propertyPath: itemDropPrefabs.Array.data[2]
       value: 
       objectReference: {fileID: 9076450756865421581, guid: d436c68ae705dc4498700b73b70a4cf3, type: 3}
     m_RemovedComponents: []

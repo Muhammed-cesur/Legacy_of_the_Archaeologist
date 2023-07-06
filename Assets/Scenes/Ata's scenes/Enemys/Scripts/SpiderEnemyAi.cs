@@ -20,7 +20,7 @@ public class SpiderEnemyAI : MonoBehaviour
 
     private Animator animator;  // Animator component for controlling animations
     private bool isAttacking = false;  // Flag to indicate if the enemy is attacking
-    public int currentHealth;  // Current health of the enemy
+    private int currentHealth;  // Current health of the enemy
     private float attackTimer = 0f;  // Timer to track the attack cooldown
 
     private float maxWanderDistance = 2f;  // Maximum distance the enemy can wander in a random direction
