@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class PolygonalMetalonAI : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class PolygonalMetalonAI : MonoBehaviour
     public int maxHealth = 20;  // Maximum health of the enemy
     public int damageAmount = 10;  // Amount of damage the enemy inflicts on the player
     public float attackCooldown = 3f;  // Cooldown period between enemy attacks
+    public List<GameObject> itemDropPrefabs;
+
 
     private bool isWandering = false; // Flag to indicate if the enemy is currently wandering
     private float minWanderDelay = 1f; // Minimum delay before changing wander direction
@@ -207,11 +210,46 @@ public class PolygonalMetalonAI : MonoBehaviour
 
     private void Die()
     {
+        // Generate a random number between 0 and 1
+        float dropChance = Random.value;
+
+        // Define the drop chance threshold for the item
+        float itemDropChance = 0.7f; // Adjust this value as desired
+
+        // Check if the drop chance is within the item drop chance threshold
+        if (dropChance <= itemDropChance)
+        {
+            int randomIndex = Random.Range(0, itemDropPrefabs.Count);
+            GameObject itemDropPrefab = itemDropPrefabs[randomIndex];
+
+            // Instantiate the item drop prefab at the enemy's position
+            GameObject itemDrop = Instantiate(itemDropPrefab, transform.position, Quaternion.identity);
+
+            // Access the item drop script on the instantiated object
+            // ItemDrop itemDropScript = itemDrop.GetComponent<ItemDrop>();
+
+            // Set the item properties or type in the item drop script
+            // itemDropScript.SetItemType(ItemType.HealthPotion); // Replace ItemType.HealthPotion with the desired item type
+
+            // Set any other properties or behavior for the item drop
+            // itemDropScript.SetProperty(...);
+
+            // Example: Play an item drop sound effect
+            // AudioManager.PlaySound("ItemDrop");
+
+            // Example: Display an item drop particle effect
+            // ParticleManager.SpawnParticle("ItemDropParticle", transform.position);
+
+            // You can also add a random rotation or apply force to the item drop
+            // itemDrop.GetComponent<Rigidbody>().AddForce(Vector3.up * dropForce, ForceMode.Impulse);
+            // itemDrop.transform.rotation = Random.rotation;
+        }
+
         // Perform death logic here, such as playing death animation, disabling collider, etc.
         // ...
 
         // Destroy the enemy game object after some delay
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 0f);
 
         // Add animation code here for the death animation
         // Example: animator.SetTrigger("Die");
