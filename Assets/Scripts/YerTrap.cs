@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,27 +7,23 @@ public class YerTrap : MonoBehaviour
 {
     [SerializeField] private int canAzalmaMiktari = 10;
     private bool temasEdildi = false;
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player") && !temasEdildi)
         {
             temasEdildi = true;
             
+            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
             // Player'daki can Scripti'ne ulaş ve collision'dan ulaşabilirsin
-            //if (playerHealth != null)
-            //{
-            //  playerHealth.AzaltCan(canAzalmaMiktari);
-            //}
+            if (playerHealth != null)
+            {
+              playerHealth.TakeDamage(canAzalmaMiktari);
+              
+            }
         }
     }
+    
 }
