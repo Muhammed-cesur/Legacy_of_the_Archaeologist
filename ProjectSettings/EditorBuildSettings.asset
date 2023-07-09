@@ -14,10 +14,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UI/UIOptions.unity
     guid: 04e73c9cb2b30d341b243631bb7c3812
-  - enabled: 1
-    path: Assets/Scenes/UI/UInventory.unity
-    guid: 3e67fd562a84c8242b5f9f2f3338b1da
-  - enabled: 1
-    path: Assets/Scenes/UI/UIPause.unity
-    guid: 8aaa71302c53cbf4cbd535d1c0e75834
   m_configObjects: {}
