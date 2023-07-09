@@ -6,12 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/UI/UIMain.unity
+    path: Assets/Scenes/UI/Scenes/UIMain.unity
     guid: 5cedaad75ea8ef846912ead44269fcf3
   - enabled: 1
-    path: Assets/Scenes/Sahne 1.unity
+    path: Assets/Scenes/Sahne 1 Furkan.unity
     guid: ee6a219c522e865448839e2a7e111fb0
   - enabled: 1
-    path: Assets/Scenes/UI/UIOptions.unity
+    path: Assets/Scenes/UI/Scenes/UIOptions.unity
     guid: 04e73c9cb2b30d341b243631bb7c3812
   m_configObjects: {}

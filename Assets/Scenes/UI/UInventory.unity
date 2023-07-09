@@ -1059,9 +1059,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1be49cc2bf4fd564d971d65b2f3f95ea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextSceneName: 
-  key: 105
-  key2: 27
 --- !u!114 &2070382299
 MonoBehaviour:
   m_ObjectHideFlags: 0
