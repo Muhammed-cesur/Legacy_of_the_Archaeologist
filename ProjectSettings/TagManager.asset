@@ -10,6 +10,10 @@ TagManager:
   - Ball1
   - Ground
   - Enemy
+  - PickupItem
+  - Red
+  - Green
+  - Blue
   layers:
   - Default
   - TransparentFX
