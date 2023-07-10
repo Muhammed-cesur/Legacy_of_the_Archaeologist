@@ -23,6 +23,7 @@ public class DuvarOkTrap : MonoBehaviour
             if (playerHealth != null)
             {
                 playerHealth.TakeDamage(arrowDamage);
+                Destroy(gameObject, 0f);
 
             }
         }
