@@ -5,11 +5,11 @@ public class CharacterDeath : MonoBehaviour
 {
     public float deathHeight = -10f; // Karakterin ölümü için belirlenen yükseklik deðeri
     public Transform respawnPoint; // Doðma noktasý
-    private HealthController healthController; // Saðlýk kontrolcüsü referansý
+    private PlayerHealth playerHealth; // Saðlýk kontrolcüsü referansý
 
     private void Start()
     {
-        healthController = GetComponent<HealthController>();
+        playerHealth = GetComponent<PlayerHealth>();
     }
 
     private void Update()
@@ -23,9 +23,9 @@ public class CharacterDeath : MonoBehaviour
 
     private void KillCharacter()
     {
-        if (healthController != null)
+        if (playerHealth != null)
         {
-            healthController.CurrentHealth = 0;
+            playerHealth.currentHealth = 0;
             RespawnCharacter();
         }
         else
@@ -37,9 +37,9 @@ public class CharacterDeath : MonoBehaviour
     private void RespawnCharacter()
     {
         transform.position = respawnPoint.position;
-        if (healthController != null)
+        if (playerHealth != null)
         {
-            healthController.ResetHealth();
+            playerHealth.ResetHealth();
         }
     }
 }

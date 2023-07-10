@@ -8,10 +8,10 @@ using UnityEngine.UI;
 public class PlayerHealth : MonoBehaviour
 {
     public int maxHealth = 100;  // Maximum health of the player
-    private int currentHealth;  // Current health of the player
+    public int currentHealth;  // Current health of the player
     public Slider healthBar;
-    
-    
+
+
 
     private void Start()
     {
@@ -19,7 +19,7 @@ public class PlayerHealth : MonoBehaviour
         UpdateHealthSlider();
 
     }
-    
+
     public void TakeDamage(int damageAmount)
     {
         currentHealth -= damageAmount; // Hasarı mevcut cana uygula
@@ -27,7 +27,7 @@ public class PlayerHealth : MonoBehaviour
         UpdateHealthSlider();
         if (currentHealth <= 0f)
         {
-            Die(); 
+            Die();
         }
     }
     private void UpdateHealthSlider()
@@ -43,8 +43,12 @@ public class PlayerHealth : MonoBehaviour
     {
         // Oyuncu ölme durumunda yapılması gereken işlemler
         Debug.Log("Player has died.");
-   
+
         // Örneğin, oyunu yeniden başlat veya ölüm ekranını göster gibi işlemler yapılabilir.
     }
-}
 
+    public void ResetHealth()
+    {
+        currentHealth = maxHealth;
+    }
+}
