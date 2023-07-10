@@ -1,5 +1,10 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/UI.meta
+guid: bd08c7d76822c5247a3188ccec5cd21f
+folderAsset: yes
+========
 guid: 6e2bd685528fe764899a23e7db05df35
+>>>>>>>> main:Assets/GenelAsset/3D Pirates Lowpoly Pack/Scenes/Demo_Island_1.unity.meta
 DefaultImporter:
   externalObjects: {}
   userData: 
