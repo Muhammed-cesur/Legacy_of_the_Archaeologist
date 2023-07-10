@@ -6,10 +6,10 @@ LOTA Games
 
 ## Takım Elemanları
 
-- Muhammed Cesur: Product Owner/Developer
+- Muhammed Cesur: Product Owner/Developer/Game Designer
 - Süeda Karaoğlu: Scrum Master/Delevoper
-- Mehmet Furkan Acer: Team Member/Developer
-- Dilara Arkan: Team Member/Developer
+- Mehmet Furkan Acer: Team Member/Developer/Game Designer
+- Dilara Arkan: Team Member/Developer/Game Designer
 - Ata Güneş: Team Member/Developer
 
 ## Ürün İsmi
@@ -60,7 +60,7 @@ Karakterimiz gezgin bir arkeolog ve kullandığı aletler ile oyun ilerledikçe 
 
 
 - **Sprint Review**: 
-Alınan kararlar: Haritanın yoğun dizaynı dolayısıyla oynanışta sıkıntı çıkmış, dizaynı sadeleştirmeye karar verilmiştir. Parşömen yetişmediği için bağlantılı iki görev ve öncelikli olmadığı karar verilen bir görev ertelenmiştir. Hazırlanan mekanikler karakter modeliyle sıkıntı çıkardığı ve düzeltilmesi gerektiği için de bir görev daha ertelenmek zorunda kalındı. Sprint Review katılımcıları: Süeda Karaoğlu, Muhammed Cesur, Mehmet Furkan Acer.
+Haritanın yoğun dizaynı dolayısıyla oynanışta sıkıntı çıkmış, dizaynı sadeleştirmeye karar verilmiştir. Parşömen yetişmediği için bağlantılı iki görev ve öncelikli olmadığı karar verilen bir görev ertelenmiştir. Hazırlanan mekanikler karakter modeliyle sıkıntı çıkardığı ve düzeltilmesi gerektiği için de bir görev daha ertelenmek zorunda kalındı. Sprint Review katılımcıları: Süeda Karaoğlu, Muhammed Cesur, Mehmet Furkan Acer.
 
 - **Sprint Retrospective:**
   - Takım içindeki görev dağılımıyla ve öncelikli görevlerle ilgili düzenleme yapılması kararı alınmıştır.
@@ -71,6 +71,28 @@ Alınan kararlar: Haritanın yoğun dizaynı dolayısıyla oynanışta sıkınt�
 
 # Sprint 2
 
+- **Sprint Notları**: Öncelikli yapılacak görevler yazıldı, diğer görevler daha sonradan planlamaya eklenerek yapıldı. Bayram dolayısıyla iki üye yaklaşık bir hafta müsait değildi.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 140 Puan
+
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint2.docx](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/files/11933057/Sprint2.docx)
+
+- **Sprint board update**: Sprint board screenshotları: 
+![Backlog 1](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/8252b806-2386-437f-802b-f6581f336860)
+![Backlog_2](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/5d03bc30-de0e-4542-a8da-cbaa98ee276d)
+![Backlog_3](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/857febf5-9a17-4e59-aeaa-fc7046b009a2)
+
+- **Ürün Durumu**: Ekran görüntüleri:
+  ![Screenshot 1](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/a23d9323-4dcd-4fd0-8003-a334f3c3c80f)
+  ![Screenshot 2](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/8574e570-5348-4c62-9f01-2a83d754b309)
+  ![Screenshot 3](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/d9535842-0700-4096-a556-a9038d8581ec)
+  
+- **Sprint Review**: 
+Harita çok büyük olduğu için küçültüldü. Eksiklikler/Unutulanlar görüldükçe not edilerek öncelikli görevler haline getirildi, bundan sonra da böyle devam edilecek. Bayramdan dolayı görevlerde gecikme olsa da sadece çözülemeyen birkaç sorun kaldı ve onlar da diğer sprinte kaldı. Teslime bir hafta kala oyunun neredeyse tamamen bitmesi planlanıyor. Son haftada hatalar ve eksikliklerin düzenlenmesine ayrılacak. Review katılımcıları: Süeda Karaoğlu, Muhammed Cesur, Mehmet Furkan Acer, Dilara Arkan, Ata Güneş.
+
+- **Sprint Retrospective:**
+
+  - Takım üyelerinin gelecek sprintte daha fazla görev alınması gerektiğine ve deadlineların kısaltılmasına karar verildi.
 
 ---
 

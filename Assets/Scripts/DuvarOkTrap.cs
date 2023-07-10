@@ -4,33 +4,34 @@ using UnityEngine;
 
 public class DuvarOkTrap : MonoBehaviour
 {
-    [SerializeField]private float damage = 10f;
+    [SerializeField]private int arrowDamage = 10;
     [SerializeField]private float arrowSpeed = 5f;
 
     private Rigidbody arrowRb;
     void Start()
     {
-        
-        arrowRb = GetComponent<Rigidbody>(); 
-
+        arrowRb = GetComponent<Rigidbody>();
     }
     
+ 
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            PlayerHealth playerHealth = collision.gameObject.GetComponent<PlayerHealth>();
             // Player'daki can Scripti'ne ulaş ve collision'dan ulaşabilirsin
-            
-           // if (playerHealth != null)
-            //{
-              //  playerHealth.TakeDamage(damage);
-            //}
-            Destroy(gameObject); // Oku yok et
+            if (playerHealth != null)
+            {
+                playerHealth.TakeDamage(arrowDamage);
+
+            }
         }
+        
     }
     // Update is called once per frame
     void Update()
-    {  ApplyForwardForce();
+    { 
+        ApplyForwardForce();
         Destroy(gameObject, 2f);
     }
 

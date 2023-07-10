@@ -628,7 +628,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2935235951960972784}
-  m_LocalRotation: {x: 0.113964714, y: -0.000000004273569, z: 4.902301e-10, w: 0.9934848}
+  m_LocalRotation: {x: 0.11396469, y: -0.000000004273569, z: 4.902299e-10, w: 0.9934848}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -805,7 +805,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3742532933785284269}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.54, y: 6.9324245, z: -7.429394}
+  m_LocalPosition: {x: 0.54, y: 6.3656764, z: -6.6791897}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1500,7 +1500,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5424151848458569000}
-  m_LocalRotation: {x: 0.2734678, y: -0.000000023405933, z: 0.0000000066544286, w: 0.96188116}
+  m_LocalRotation: {x: 0.2734678, y: 0.000000016550496, z: -0.0000000047053916, w: 0.96188116}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2216,9 +2216,10 @@ GameObject:
   - component: {fileID: 6777636667653916539}
   - component: {fileID: 321110595539018202}
   - component: {fileID: 8526321795337728883}
+  - component: {fileID: 7608553586541387801}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2232,8 +2233,8 @@ Transform:
   m_GameObject: {fileID: 7827959040236087930}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.84469867, y: 0, z: -2.5070198}
-  m_LocalScale: {x: 0.33, y: 0.33, z: 0.33}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.37, y: 0.37, z: 0.37}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 8604955164245336253}
   - {fileID: 6615211444754827260}
@@ -2241,7 +2242,7 @@ Transform:
   - {fileID: 2592779074766534214}
   - {fileID: 6812844629470856525}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &455156815623618631
 Animator:
@@ -2327,7 +2328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Model: {fileID: 822635678800970023}
-  RotationSpeed: 6
+  RotationSpeed: 16.38
   damp: 3
   runButton: 304
   walkButton: 99
@@ -2370,6 +2371,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   "Eldek\u0131l\u0131c": {fileID: 4341384089052946091}
   "Sirtak\u0131l\u0131c": {fileID: 6701830213737629442}
+--- !u!114 &7608553586541387801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7827959040236087930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccb352188679c584cbc725a0c679e0e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  healthBar: {fileID: 0}
 --- !u!1 &8097345483594387258
 GameObject:
   m_ObjectHideFlags: 3
@@ -2394,7 +2409,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8097345483594387258}
-  m_LocalRotation: {x: 0.31788003, y: 0.000000016313905, z: -0.000000005469566, w: 0.94813097}
+  m_LocalRotation: {x: 0.31788003, y: -1e-45, z: 1e-45, w: 0.94813097}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2461,7 +2476,7 @@ GameObject:
   - component: {fileID: 807262143296319580}
   m_Layer: 0
   m_Name: mixamorig:Hips
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2475,7 +2490,7 @@ Transform:
   m_GameObject: {fileID: 8183379818925080898}
   m_LocalRotation: {x: -0.0000018781674, y: -0.0000029363007, z: 0.00007082622, w: 1}
   m_LocalPosition: {x: -0.000031044863, y: 2.2525113, z: -0.007704299}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5277047969780987784}
