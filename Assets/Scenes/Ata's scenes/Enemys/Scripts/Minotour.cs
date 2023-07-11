@@ -18,6 +18,7 @@ public class Minotour : MonoBehaviour
     private float maxWanderDelay = 5f; // Maximum delay before changing wander direction
     private float wanderTimer = 0f; // Timer to track the delay for changing wander direction
 
+    private bool isdead = false;
     private Animator animator;  // Animator component for controlling animations
     private bool isAttacking = false;  // Flag to indicate if the enemy is attacking
     public int currentHealth;  // Current health of the enemy
@@ -36,6 +37,7 @@ public class Minotour : MonoBehaviour
 
     private void Update()
     {
+        if (isdead) { Destroy(gameObject, 3f); return; }
         // Calculate the distance between the enemy and the player
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
@@ -221,15 +223,21 @@ public class Minotour : MonoBehaviour
 
     public void TakeDamage(float damage)
     {
-        // Reduce health by the given damage amount
-        currentHealth -= (int)damage;
-        animator.SetTrigger("damage");
-
-        // Check if the enemy is dead
-        if (currentHealth <= 0)
+        if (isdead != true)
         {
-            Die();
+            // Reduce health by the given damage amount
+            currentHealth -= (int)damage;
+            animator.SetTrigger("damage");
+
+            // Check if the enemy is dead
+            if (currentHealth <= 0)
+            {
+                isdead = true;
+                Die();
+            }
         }
+
+
     }
 
     private void Die()
@@ -272,10 +280,9 @@ public class Minotour : MonoBehaviour
 
         // Perform death logic here, such as playing death animation, disabling collider, etc.
         // ...
-
+        //StartCoroutine(WaitDelay(2f));
         // Destroy the enemy game object after some delay
-        Destroy(gameObject, 3f);
-
+        //Destroy(gameObject, 0f);
         // Add animation code here for the death animation
         // Example: animator.SetTrigger("Die");
     }
