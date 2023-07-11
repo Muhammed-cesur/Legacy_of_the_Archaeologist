@@ -97,11 +97,11 @@ public class InventoryManager : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            UseInventoryItem(1, blueItems);
+            UseInventoryItem(0, blueItems);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            UseInventoryItem(2, greenItems);
+            UseInventoryItem(0, greenItems);
         }
         // Add more key checks as needed for additional slots
     }
