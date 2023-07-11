@@ -4,16 +4,8 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - a
-  - objectToDelete
-  - Ball2
-  - Ball1
   - Ground
-  - Enemy
-  - PickupItem
-  - Red
-  - Green
-  - Blue
+  - Ball
   layers:
   - Default
   - TransparentFX
