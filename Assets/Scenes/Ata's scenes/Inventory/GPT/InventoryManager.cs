@@ -1,5 +1,7 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;    
 
 public class InventoryManager : MonoBehaviour
 {
@@ -10,11 +12,16 @@ public class InventoryManager : MonoBehaviour
         public int quantity;
     }
 
+
     public GameObject[] quickInventorySlots; // Array of GameObjects representing the slots in the quick inventory
     public List<InventoryItem> redItems; // List to store the red items in the inventory
     public List<InventoryItem> blueItems; // List to store the blue items in the inventory
     public List<InventoryItem> greenItems; // List to store the green items in the inventory
     public List<InventoryItem> otherItems; // List to store other items in the inventory
+
+    public TMP_Text redItemsText; // Text component to display red items quantity
+    public TMP_Text blueItemsText; // Text component to display blue items quantity
+    public TMP_Text otherItemsText; // Text component to display other items quantity
 
     private void OnTriggerEnter(Collider other)
     {
@@ -86,7 +93,27 @@ public class InventoryManager : MonoBehaviour
                 quickInventorySlots[i].SetActive(false);
             }
         }
+
+        // Update the text components for each inventory list
+        redItemsText.text = GetCurrentItemAmount(redItems);
+        blueItemsText.text = GetCurrentItemAmount(blueItems);
+        otherItemsText.text = GetCurrentItemAmount(otherItems);
     }
+
+    private string GetCurrentItemAmount(List<InventoryItem> inventoryList)
+    {
+        int totalQuantity = 0;
+
+        // Calculate the total quantity of items in the inventory list
+        foreach (InventoryItem inventoryItem in inventoryList)
+        {
+            totalQuantity += inventoryItem.quantity;
+        }
+
+        // Return the total quantity as a string
+        return totalQuantity.ToString();
+    }
+
 
     private void Update()
     {
