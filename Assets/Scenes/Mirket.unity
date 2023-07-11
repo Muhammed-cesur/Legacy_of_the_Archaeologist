@@ -631,8 +631,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   diyaloglar:
-  - merhaba
+  - "merhaba(f tu\u015Funa bas\u0131p di\u011Fer metine ge\xE7in)"
   - "nas\u0131ls\u0131n"
+  - sdasdadsad
+  - sdsf
+  - sdasdadsad
+  - sjkdhsadajkshdsa
   Diyalog: {fileID: 418808541}
   diyalogText: {fileID: 839998608}
 --- !u!1 &839998606
@@ -1618,7 +1622,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1898627621441247258}
-  - component: {fileID: 1898627621441247259}
   m_Layer: 0
   m_Name: NativeCharacters15man@T-Pose
   m_TagString: Untagged
@@ -1913,21 +1916,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1898627621441247259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1230212154216432288}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f331557426c4ebc4bad044e065b4e30f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  diyaloglar: []
-  Diyalog: {fileID: 0}
-  diyalogText: {fileID: 0}
 --- !u!4 &1899552492046187744
 Transform:
   m_ObjectHideFlags: 0
