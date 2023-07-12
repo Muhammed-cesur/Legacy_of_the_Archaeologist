@@ -71,7 +71,7 @@ public class PlayerBlade : MonoBehaviour
 private IEnumerator AttackCooldown()
     {
         canAttack = false; // Disable attacking
-        yield return new WaitForSeconds(1f); // Wait for 0.5 seconds
+        yield return new WaitForSeconds(0.1f); // Wait for 0.5 seconds
         canAttack = true; // Enable attacking
     }
 }
