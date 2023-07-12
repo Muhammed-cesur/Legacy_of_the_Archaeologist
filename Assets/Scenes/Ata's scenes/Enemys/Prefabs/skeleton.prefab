@@ -4128,6 +4128,7 @@ MonoBehaviour:
   maxHealth: 100
   damageAmount: 10
   attackCooldown: 3
+  itemDropPrefabs: []
   currentHealth: 0
 --- !u!136 &3158831498103723001
 CapsuleCollider:
