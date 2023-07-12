@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using TMPro;    
+using TMPro;
+using System.Collections;
 
 public class InventoryManager : MonoBehaviour
 {
@@ -11,8 +12,10 @@ public class InventoryManager : MonoBehaviour
         public GameObject itemPrefab;
         public int quantity;
     }
-
-
+    public GameObject healEffect;
+    public GameObject powerEffect;
+    public GameObject swordCode;
+    public PlayerHealth playerHealth;
     public GameObject[] quickInventorySlots; // Array of GameObjects representing the slots in the quick inventory
     public List<InventoryItem> redItems; // List to store the red items in the inventory
     public List<InventoryItem> blueItems; // List to store the blue items in the inventory
@@ -120,10 +123,22 @@ public class InventoryManager : MonoBehaviour
         // Check for key input to use the objects in the quick inventory
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
+            if (0 < redItems.Count)
+            {
+                // Heal the character
+                playerHealth.TakeDamage(-50);
+                Debug.Log("Player healed by 50 points.");
+                StartCoroutine(EffectCooldown("heal"));
+            }
             UseInventoryItem(0, redItems);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
+            if (0 < blueItems.Count)
+            {
+                swordCode.GetComponent<PlayerBlade>().PowerUp();
+                StartCoroutine(EffectCooldown("powerUp"));
+            }
             UseInventoryItem(0, blueItems);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
@@ -131,6 +146,22 @@ public class InventoryManager : MonoBehaviour
             UseInventoryItem(0, greenItems);
         }
         // Add more key checks as needed for additional slots
+    }
+
+    private IEnumerator EffectCooldown(string effect)
+    {
+        if (effect == "heal")
+        {
+            healEffect.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            healEffect.SetActive(false);
+        }
+        else
+        {
+            powerEffect.SetActive(true);
+            yield return new WaitForSeconds(20f);
+            powerEffect.SetActive(false);
+        }
     }
 
     private void UseInventoryItem(int slotIndex, List<InventoryItem> inventoryList)
