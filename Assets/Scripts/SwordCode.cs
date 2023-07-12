@@ -44,7 +44,31 @@ public class PlayerBlade : MonoBehaviour
         }
     }
 
-    private IEnumerator AttackCooldown()
+
+    public void PowerUp()
+    {
+        /*
+        damageAmount = 20f;
+        Debug.Log("Player powered up by 10 points.");
+        StartCoroutine(PowerUpCooldown());
+        damageAmount = 10f;
+        Debug.Log("Player powered up just ended.");
+        */
+        StartCoroutine(PowerUpCooldown());
+    }
+
+
+    private IEnumerator PowerUpCooldown()
+    {
+        damageAmount = 20f;
+        Debug.Log("Player powered up by 10 points.");
+        yield return new WaitForSeconds(20f);
+        Debug.Log("Player powered up just ended.");
+        damageAmount = 10f;
+    }
+
+
+private IEnumerator AttackCooldown()
     {
         canAttack = false; // Disable attacking
         yield return new WaitForSeconds(1f); // Wait for 0.5 seconds
