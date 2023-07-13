@@ -11,12 +11,14 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth;  // Current health of the player
     public Slider healthBar;
 
+    private UIManager _uıManager;
 
 
     private void Start()
     {
         currentHealth = maxHealth; // Başlangıçta canı maksimum değere ayarla
         UpdateHealthSlider();
+        
 
     }
 
@@ -41,7 +43,7 @@ public class PlayerHealth : MonoBehaviour
     }
     private void Die()
     {
-        // Oyuncu ölme durumunda yapılması gereken işlemler
+        _uıManager.GameOver();
         Debug.Log("Player has died.");
 
         // Örneğin, oyunu yeniden başlat veya ölüm ekranını göster gibi işlemler yapılabilir.
