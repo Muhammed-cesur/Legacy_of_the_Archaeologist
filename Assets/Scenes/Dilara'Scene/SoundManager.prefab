@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4395945474927048445
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3326023398267149634}
+  - component: {fileID: 5382342767334340057}
+  m_Layer: 0
+  m_Name: SoundManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3326023398267149634
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4395945474927048445}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5382342767334340057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4395945474927048445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d8908831005df48925e429fcb90571, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
+  mainMusic: {fileID: 0}
+  atmosphereSoundEffects: {fileID: 0}
+  atmosphereSoundEffects2: {fileID: 0}
+  atmosphereSoundEffects3: {fileID: 0}
+  atmosphereSoundEffects4: {fileID: 0}
+  characterSoundEffects: {fileID: 0}
+  characterSoundEffects2: {fileID: 0}
+  windForestTree: {fileID: 8300000, guid: 8c995128f10437b4db83fd2c9e5ffb1f, type: 3}
+  forestWindBird: {fileID: 8300000, guid: e3d6021ae9366e241a89c614e0d94f15, type: 3}
+  seaSandWave: {fileID: 8300000, guid: 670a899b5645ce345b86a45f67d0a104, type: 3}
+  mountainCricet: {fileID: 8300000, guid: 2070b32f15cc6ee488f2a4d1a899e064, type: 3}
+  walk: {fileID: 8300000, guid: 270716b0b77c1b4458ba9004bfdce099, type: 3}
+  run: {fileID: 8300000, guid: 173bb845a28eba14ea1fc8805639e801, type: 3}

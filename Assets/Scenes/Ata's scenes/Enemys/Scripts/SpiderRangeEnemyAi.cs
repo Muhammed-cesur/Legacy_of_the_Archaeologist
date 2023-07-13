@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class SpiderRangeEnemyAI : MonoBehaviour
 {
@@ -7,7 +8,11 @@ public class SpiderRangeEnemyAI : MonoBehaviour
     public float detectionRange = 10f;  // Range at which the enemy detects the player
     public float attackRange = 2f;  // Range at which the enemy attacks the player
     public float movementSpeed = 2f;  // Speed at which the enemy moves
-    public int maxHealth = 100;  // Maximum health of the enemy
+    public int maxHealth = 20;  // Maximum health of the enemy
+    public int damageAmount = 10;  // Amount of damage the enemy inflicts on the player
+    public float attackCooldown = 3f;  // Cooldown period between enemy attacks
+    public List<GameObject> itemDropPrefabs;
+
 
     private bool isWandering = false; // Flag to indicate if the enemy is currently wandering
     private float minWanderDelay = 1f; // Minimum delay before changing wander direction
@@ -16,14 +21,13 @@ public class SpiderRangeEnemyAI : MonoBehaviour
 
     private Animator animator;  // Animator component for controlling animations
     private bool isAttacking = false;  // Flag to indicate if the enemy is attacking
-    private int currentHealth;  // Current health of the enemy
-
+    public int currentHealth;  // Current health of the enemy
+    private float attackTimer = 0f;  // Timer to track the attack cooldown
 
     private float maxWanderDistance = 2f;  // Maximum distance the enemy can wander in a random direction
     private float waitDuration = 1f;  // Duration to wait after wandering before starting to wander again
     private bool isWaiting = false;  // Flag to indicate if the enemy is currently waiting
     private float waitTimer = 0f;  // Timer to track the wait duration
-
 
     private void Start()
     {
@@ -42,10 +46,11 @@ public class SpiderRangeEnemyAI : MonoBehaviour
             // Rotate to face the player
             transform.LookAt(player);
 
-            // Check if the player is within attack range
-            if (distanceToPlayer <= attackRange)
+            // Check if the player is within attack range and the attack cooldown has expired
+            if (distanceToPlayer <= attackRange && attackTimer <= 0f)
             {
                 Attack();
+                attackTimer = attackCooldown;
             }
             else
             {
@@ -71,6 +76,12 @@ public class SpiderRangeEnemyAI : MonoBehaviour
             {
                 Wander();
             }
+        }
+
+        // Update the attack cooldown timer
+        if (attackTimer > 0f)
+        {
+            attackTimer -= Time.deltaTime;
         }
     }
 
@@ -159,18 +170,37 @@ public class SpiderRangeEnemyAI : MonoBehaviour
 
             // Perform attack logic here
             // ...
-
+            StartCoroutine(DelayedDamage());
             // Print a message to the console
-            Debug.Log("Enemy attacking = true");
+
+
+
         }
         isAttacking = false;
     }
 
-    public void TakeDamage(int damage)
+    private IEnumerator DelayedDamage()
+    {
+        // Wait for the attack animation to finish
+        yield return new WaitForSeconds(1f);
+        Debug.Log("Enemy attacking = true");
+        // Inflict damage on the player
+        PlayerHealth playerHealth = player.GetComponent<PlayerHealth>();
+        if (playerHealth != null)
+        {
+            playerHealth.TakeDamage(damageAmount);
+        }
+
+        // Set isAttacking flag to false
+        isAttacking = false;
+    }
+
+    public void TakeDamage(float damage)
     {
         // Reduce health by the given damage amount
-        currentHealth -= damage;
+        currentHealth -= (int)damage;
         animator.SetTrigger("damage");
+
         // Check if the enemy is dead
         if (currentHealth <= 0)
         {
@@ -180,11 +210,46 @@ public class SpiderRangeEnemyAI : MonoBehaviour
 
     private void Die()
     {
+        // Generate a random number between 0 and 1
+        float dropChance = Random.value;
+
+        // Define the drop chance threshold for the item
+        float itemDropChance = 0.7f; // Adjust this value as desired
+
+        // Check if the drop chance is within the item drop chance threshold
+        if (dropChance <= itemDropChance)
+        {
+            int randomIndex = Random.Range(0, itemDropPrefabs.Count);
+            GameObject itemDropPrefab = itemDropPrefabs[randomIndex];
+
+            // Instantiate the item drop prefab at the enemy's position
+            GameObject itemDrop = Instantiate(itemDropPrefab, transform.position, Quaternion.identity);
+
+            // Access the item drop script on the instantiated object
+            // ItemDrop itemDropScript = itemDrop.GetComponent<ItemDrop>();
+
+            // Set the item properties or type in the item drop script
+            // itemDropScript.SetItemType(ItemType.HealthPotion); // Replace ItemType.HealthPotion with the desired item type
+
+            // Set any other properties or behavior for the item drop
+            // itemDropScript.SetProperty(...);
+
+            // Example: Play an item drop sound effect
+            // AudioManager.PlaySound("ItemDrop");
+
+            // Example: Display an item drop particle effect
+            // ParticleManager.SpawnParticle("ItemDropParticle", transform.position);
+
+            // You can also add a random rotation or apply force to the item drop
+            // itemDrop.GetComponent<Rigidbody>().AddForce(Vector3.up * dropForce, ForceMode.Impulse);
+            // itemDrop.transform.rotation = Random.rotation;
+        }
+
         // Perform death logic here, such as playing death animation, disabling collider, etc.
         // ...
 
         // Destroy the enemy game object after some delay
-        Destroy(gameObject, 1f);
+        Destroy(gameObject, 0f);
 
         // Add animation code here for the death animation
         // Example: animator.SetTrigger("Die");

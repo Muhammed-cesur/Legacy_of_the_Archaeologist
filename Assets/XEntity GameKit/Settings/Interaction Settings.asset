@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbfc8c4e1e80985488bf678cf29568ec, type: 3}
+  m_Name: Interaction Settings
+  m_EditorClassIdentifier: 
+  itemCollectorMode: 0
+  highlightColor: {r: 0.27727836, g: 0.5497934, b: 0.8773585, a: 0}
+  itemDropHeightOffset: 0.3
+  interactionRange: 5
+  autoCloseExternalContainer: 1
+  forceAddRequiredComponents: 1
+  optionsMenuButtonPrefab: {fileID: 3525979026492095318, guid: 768837510712cbb45b61b3e5ec8f0df5, type: 3}
+  internalSlotOptions: 00000000030000000100000002000000
+  externalSlotOptions: 03000000040000000100000002000000
+  transferSingleItem: 324
+  transferHalfStack: 304
+  drawRangeIndicators: 0

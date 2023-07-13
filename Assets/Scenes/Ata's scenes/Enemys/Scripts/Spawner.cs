@@ -1,10 +1,12 @@
 using System.Collections;
 using UnityEngine;
+using System.Collections.Generic;
 
 public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemyPrefab;
     public Transform spawnPoint;
+    public List<GameObject> itemDropPrefabs;
     public float horizontalRadius;
     public float verticalRadius;
     public float zRadius;
@@ -14,7 +16,7 @@ public class EnemySpawner : MonoBehaviour
     public float attackRange = 1.5f;
     public float enemySpeed = 3f;
     public Transform character;
-
+    public int maxHealth = 20;
     private int currentMonsters;
     private Transform enemyParent;
 
@@ -39,7 +41,8 @@ public class EnemySpawner : MonoBehaviour
                 enemyAI.attackRange = attackRange;
                 enemyAI.movementSpeed = enemySpeed;
                 enemyAI.player = character;
-
+                enemyAI.itemDropPrefabs = itemDropPrefabs;
+                enemyAI.maxHealth = maxHealth;
                 currentMonsters++;
             }
 

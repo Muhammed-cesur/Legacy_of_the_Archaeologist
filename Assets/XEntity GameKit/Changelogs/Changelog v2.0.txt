@@ -1,0 +1,23 @@
+Version 2.0 (January 2023)
+-------------------------------
+
+Compatibility:
+	Significant portion of the asset is NOT backwards compatible with version 1.0.
+
+New Features/Changes:
+	1. External storage system (e.g. chests, loot boxes, etc).
+	2. External item container range restriction.
+	3. System to transfer one item at a time from a stack. 
+	4. System to transfer half of a stack of items at once. 
+	5. UI button added for closing container panels.
+	6. Item container panel is now draggable. 
+	7. Customizable slot options menu.  
+	8. Slot option to view item information.
+	9. Slot option to bulk remove items. 
+	10. Scripts are organized by namespaces with new assembly definition.
+	11. Different item drop options.
+
+Bugs Fixed:
+	1. Item duplication due to tweening delay.
+	2. Container panels not focusing correctly when overlapped.
+	3. Slot options menu not closing when dragged.

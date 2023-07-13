@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7bb37a5e4810a7744a6b9d1f88712c1d, type: 3}
+  m_Name: Stick
+  m_EditorClassIdentifier: 
+  type: 0
+  itemName: Stick
+  itemPerSlot: 4
+  icon: {fileID: 21300000, guid: bc200dc6b4f271e45bc4adf42e38ff93, type: 3}
+  prefab: {fileID: 1475359361556197589, guid: d34168c4be412dc44a5043b5d6f50c05, type: 3}
+  itemInformation: Sticks can be used to make a fire.

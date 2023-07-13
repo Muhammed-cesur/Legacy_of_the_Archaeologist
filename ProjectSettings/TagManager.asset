@@ -6,6 +6,11 @@ TagManager:
   tags:
   - Ground
   - Ball
+  - Undefined
+  - Red
+  - Blue
+  - Green
+  - PickupItem
   layers:
   - Default
   - TransparentFX
