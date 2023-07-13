@@ -251,6 +251,79 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1 &245233454
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 245233455}
+  - component: {fileID: 245233457}
+  - component: {fileID: 245233456}
+  m_Layer: 5
+  m_Name: Arkaplan (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &245233455
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245233454}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 418808542}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.135}
+  m_AnchorMax: {x: 0.5, y: 0.135}
+  m_AnchoredPosition: {x: 852, y: -437}
+  m_SizeDelta: {x: 135.7902, y: 97}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &245233456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245233454}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 2800000, guid: d13a9b16a341d0441a32375b764d5ea0, type: 3}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &245233457
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 245233454}
+  m_CullTransparentMesh: 1
 --- !u!1 &418808541
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,6 +354,7 @@ RectTransform:
   m_Children:
   - {fileID: 564582644}
   - {fileID: 839998607}
+  - {fileID: 245233455}
   m_Father: {fileID: 1268669056}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -587,12 +661,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 644911831}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -940.4074, y: -539.722, z: -6.64}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1898627621441247258}
+  m_Father: {fileID: 1268669056}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &644911833
@@ -632,11 +706,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   diyaloglar:
   - "merhaba(f tu\u015Funa bas\u0131p di\u011Fer metine ge\xE7in)"
-  - "nas\u0131ls\u0131n"
-  - sdasdadsad
-  - sdsf
-  - sdasdadsad
-  - sjkdhsadajkshdsa
   Diyalog: {fileID: 418808541}
   diyalogText: {fileID: 839998608}
 --- !u!1 &839998606
@@ -937,6 +1006,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 418808542}
+  - {fileID: 644911832}
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1912,7 +1982,6 @@ Transform:
   m_Children:
   - {fileID: 6199509518688090254}
   - {fileID: 2724572620873965171}
-  - {fileID: 644911832}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6201,7 +6270,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5424151848141327698}
-  m_LocalRotation: {x: 0.2734678, y: -0.000000023405933, z: 0.0000000066544286, w: 0.96188116}
+  m_LocalRotation: {x: 0.2734678, y: 0.000000023405933, z: -0.0000000066544286, w: 0.96188116}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
