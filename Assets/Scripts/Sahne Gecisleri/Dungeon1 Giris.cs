@@ -7,7 +7,7 @@ public class Dungeon1Giris : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
-                SceneManager.LoadScene(3);
+                SceneManager.LoadScene(2);
             }
         }
     

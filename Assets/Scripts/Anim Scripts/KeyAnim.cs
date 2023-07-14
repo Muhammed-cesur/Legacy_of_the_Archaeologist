@@ -1,6 +1,8 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 
 public class KeyAnim : MonoBehaviour
 {
@@ -8,7 +10,8 @@ public class KeyAnim : MonoBehaviour
     private Animator _animator;
 
     public GameObject dungeonExit;
-    public GameObject dungeonExitDoor; 
+    public GameObject dungeonExitDoor;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +26,10 @@ public class KeyAnim : MonoBehaviour
             _animator.SetTrigger("Key");
             dungeonExitDoor.transform.Rotate(new Vector3(0, -90, 0));
             dungeonExit.GetComponent<Collider>().isTrigger = true;
+           
 
         }
     }
+
+
 }
