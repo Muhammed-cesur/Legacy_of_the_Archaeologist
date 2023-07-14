@@ -1,4 +1,4 @@
-![İsimsiz-video-‐-Clipchamp-ile-yapıldı](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/6910e386-1d80-426e-a8b0-ee25bc5dfb96)# **Takım İsmi**
+# **Takım İsmi**
 
 LOTA Games
 
