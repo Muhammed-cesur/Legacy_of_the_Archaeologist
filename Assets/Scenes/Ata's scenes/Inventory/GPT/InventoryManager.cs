@@ -15,6 +15,7 @@ public class InventoryManager : MonoBehaviour
     public GameObject healEffect;
     public GameObject powerEffect;
     public GameObject swordCode;
+    public GameObject wall;
     public PlayerHealth playerHealth;
     public GameObject[] quickInventorySlots; // Array of GameObjects representing the slots in the quick inventory
     public List<InventoryItem> redItems; // List to store the red items in the inventory
@@ -144,6 +145,15 @@ public class InventoryManager : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             UseInventoryItem(0, greenItems);
+        }
+        else if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            if (0 < otherItems.Count)
+            {
+                Destroy(wall);
+            }
+            UseInventoryItem(0, otherItems);
+
         }
         // Add more key checks as needed for additional slots
     }
