@@ -6,7 +6,6 @@ public class UIManager : MonoBehaviour
 {
     public Canvas pauseCanvas;
     public Canvas inGameCanvas;
-    public Canvas inventoryCanvas;
     public Canvas map;
     public Canvas gameOverCanvas;
     
@@ -14,7 +13,6 @@ public class UIManager : MonoBehaviour
     private void Start()
     {
         pauseCanvas.enabled = false;
-        inventoryCanvas.enabled = false;
         inGameCanvas.enabled = true;
         map.enabled = false;
         gameOverCanvas.enabled = false;
@@ -28,11 +26,6 @@ public class UIManager : MonoBehaviour
             TogglePauseCanvas(); // ESC tuşuna basıldığında Canvas'ı aç/kapat
         }
 
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            OpenInventory(); // I tuşuna basıldığında Envanter'i aç/kapat
-        }
-
         if (Input.GetKeyDown(KeyCode.M))
         {
             OpenMap();
@@ -42,7 +35,6 @@ public class UIManager : MonoBehaviour
     {
         if (map.enabled == false)
         {
-            inventoryCanvas.enabled = false;
             inGameCanvas.enabled = false;
             pauseCanvas.enabled = false;
             map.enabled = true;
@@ -52,7 +44,6 @@ public class UIManager : MonoBehaviour
 
         else if (map.enabled == true)
         {
-            inventoryCanvas.enabled = false;
             inGameCanvas.enabled = true;
             pauseCanvas.enabled = false;
             map.enabled = false;
@@ -60,34 +51,14 @@ public class UIManager : MonoBehaviour
 
         }
     }
-    public void OpenInventory()
-    {
-        if (inventoryCanvas.enabled == false)
-        {
-            inventoryCanvas.enabled = true;
-            inGameCanvas.enabled = false; 
-            pauseCanvas.enabled = false;
-            map.enabled = false;
-            ToggleGamePause();
-        }
-
-        else if (inventoryCanvas.enabled == true)
-        {
-            inventoryCanvas.enabled = false;
-            inGameCanvas.enabled = true;
-            pauseCanvas.enabled = false;
-            map.enabled = false;
-            ToggleGamePause();
-        }
-     
-    }
+    
     
 
     public void TogglePauseCanvas()
     {
         if (pauseCanvas.enabled == false)
         {
-            inventoryCanvas.enabled = false;
+           
             inGameCanvas.enabled = false; 
             pauseCanvas.enabled = true;
             map.enabled = false;
@@ -96,7 +67,7 @@ public class UIManager : MonoBehaviour
 
         else if (pauseCanvas.enabled == true)
         {
-            inventoryCanvas.enabled = false;
+            
             inGameCanvas.enabled = true;
             pauseCanvas.enabled = false;
             map.enabled = false;
@@ -109,7 +80,6 @@ public class UIManager : MonoBehaviour
         if (gameOverCanvas.enabled == false)
         {
             pauseCanvas.enabled = false;
-            inventoryCanvas.enabled = false;
             inGameCanvas.enabled = false;
             map.enabled = false;
             gameOverCanvas.enabled = true;
@@ -148,7 +118,6 @@ public class UIManager : MonoBehaviour
     public void GameResume()
     {
         pauseCanvas.enabled = false;
-        inventoryCanvas.enabled = false;
         inGameCanvas.enabled = true;
         map.enabled = false;
         gameOverCanvas.enabled = false;
