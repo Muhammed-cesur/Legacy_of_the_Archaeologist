@@ -11,13 +11,17 @@ public class PlayerHealth : MonoBehaviour
 
     private UIManager uıManager;
     private Vector3 savedPosition;  // Saved position of the player
+    private Animator _Anim;
 
     private void Start()
     {
         uıManager = FindObjectOfType<UIManager>();
         currentHealth = maxHealth; // Set current health to maximum at the start
         UpdateHealthSlider();
+        _Anim=GetComponent<Animator>();
+
     }
+
 
     private void Update()
     {
@@ -25,6 +29,7 @@ public class PlayerHealth : MonoBehaviour
         if (currentHealth <= 0)
         {
             Die();
+            _Anim.SetTrigger("Die"); 
         }
 
         // Handle saving and loading inputs
@@ -59,8 +64,11 @@ public class PlayerHealth : MonoBehaviour
     {
         // Actions to perform when the player dies
         Debug.Log("Player has died.");
-        StartCoroutine(uıManager.GameOverCoroutine(2f));
-    
+        
+        
+        //StartCoroutine(uıManager.GameOverCoroutine(2f));
+
+        
         // Respawn the player with full health
         Respawn();
     }
