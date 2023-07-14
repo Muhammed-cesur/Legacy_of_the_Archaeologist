@@ -14250,10 +14250,12 @@ MonoBehaviour:
   detectionRange: 10
   attackRange: 3
   movementSpeed: 2
-  maxHealth: 100
+  maxHealth: 15
   damageAmount: 10
   attackCooldown: 3
-  itemDropPrefabs: []
+  itemDropPrefabs:
+  - {fileID: 439726086457075563, guid: 5c5e977a64542254da21148f61cc2a5b, type: 3}
+  - {fileID: 3761745242275073796, guid: 19e2646e0ee4b8a46a0ad5fb9dd8d314, type: 3}
 --- !u!95 &1034700964
 Animator:
   serializedVersion: 5
@@ -33812,10 +33814,12 @@ MonoBehaviour:
   detectionRange: 10
   attackRange: 2
   movementSpeed: 1
-  maxHealth: 100
+  maxHealth: 25
   damageAmount: 10
   attackCooldown: 3
-  itemDropPrefabs: []
+  itemDropPrefabs:
+  - {fileID: 439726086457075563, guid: 5c5e977a64542254da21148f61cc2a5b, type: 3}
+  - {fileID: 3761745242275073796, guid: 19e2646e0ee4b8a46a0ad5fb9dd8d314, type: 3}
   currentHealth: 0
 --- !u!1 &1291654759510479951
 GameObject:
@@ -37631,7 +37635,9 @@ MonoBehaviour:
   maxHealth: 100
   damageAmount: 10
   attackCooldown: 3
-  itemDropPrefabs: []
+  itemDropPrefabs:
+  - {fileID: 3761745242275073796, guid: 19e2646e0ee4b8a46a0ad5fb9dd8d314, type: 3}
+  - {fileID: 439726086457075563, guid: 5c5e977a64542254da21148f61cc2a5b, type: 3}
   currentHealth: 0
 --- !u!4 &2136010552599336408
 Transform:
@@ -37760,10 +37766,12 @@ MonoBehaviour:
   detectionRange: 10
   attackRange: 2
   movementSpeed: 1
-  maxHealth: 100
+  maxHealth: 25
   damageAmount: 10
   attackCooldown: 3
-  itemDropPrefabs: []
+  itemDropPrefabs:
+  - {fileID: 0}
+  - {fileID: 3761745242275073796, guid: 19e2646e0ee4b8a46a0ad5fb9dd8d314, type: 3}
   currentHealth: 0
 --- !u!1 &2160200253482482171
 GameObject:
@@ -40773,10 +40781,12 @@ MonoBehaviour:
   detectionRange: 10
   attackRange: 3
   movementSpeed: 2
-  maxHealth: 100
+  maxHealth: 15
   damageAmount: 10
   attackCooldown: 3
-  itemDropPrefabs: []
+  itemDropPrefabs:
+  - {fileID: 439726086457075563, guid: 5c5e977a64542254da21148f61cc2a5b, type: 3}
+  - {fileID: 3761745242275073796, guid: 19e2646e0ee4b8a46a0ad5fb9dd8d314, type: 3}
 --- !u!1 &2966461980484877763
 GameObject:
   m_ObjectHideFlags: 0
@@ -44970,10 +44980,12 @@ MonoBehaviour:
   detectionRange: 10
   attackRange: 2
   movementSpeed: 1
-  maxHealth: 100
+  maxHealth: 25
   damageAmount: 10
   attackCooldown: 3
-  itemDropPrefabs: []
+  itemDropPrefabs:
+  - {fileID: 439726086457075563, guid: 5c5e977a64542254da21148f61cc2a5b, type: 3}
+  - {fileID: 3761745242275073796, guid: 19e2646e0ee4b8a46a0ad5fb9dd8d314, type: 3}
   currentHealth: 0
 --- !u!4 &3891293609604930178
 Transform:
@@ -53451,10 +53463,12 @@ MonoBehaviour:
   detectionRange: 10
   attackRange: 2
   movementSpeed: 1
-  maxHealth: 100
+  maxHealth: 25
   damageAmount: 10
   attackCooldown: 3
-  itemDropPrefabs: []
+  itemDropPrefabs:
+  - {fileID: 439726086457075563, guid: 5c5e977a64542254da21148f61cc2a5b, type: 3}
+  - {fileID: 3761745242275073796, guid: 19e2646e0ee4b8a46a0ad5fb9dd8d314, type: 3}
   currentHealth: 0
 --- !u!1 &5649235284843073959
 GameObject:
@@ -63363,10 +63377,12 @@ MonoBehaviour:
   detectionRange: 10
   attackRange: 3
   movementSpeed: 2
-  maxHealth: 100
+  maxHealth: 40
   damageAmount: 10
   attackCooldown: 3
-  itemDropPrefabs: []
+  itemDropPrefabs:
+  - {fileID: 3761745242275073796, guid: 19e2646e0ee4b8a46a0ad5fb9dd8d314, type: 3}
+  - {fileID: 439726086457075563, guid: 5c5e977a64542254da21148f61cc2a5b, type: 3}
 --- !u!4 &8051046039126695304
 Transform:
   m_ObjectHideFlags: 0
