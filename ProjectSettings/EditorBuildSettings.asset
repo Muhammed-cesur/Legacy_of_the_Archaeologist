@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/dungeon5.unity
     guid: 05dfa75c9ef42364ebef02cc39f40eec
+  - enabled: 1
+    path: Assets/Scenes/Final.unity
+    guid: 089fe45f3ca9db94cb4ba6f9b0727b72
+  - enabled: 1
+    path: Assets/Scenes/UI/Scenes/Credits.unity
+    guid: a60ddb9eba3e8404f909af6d518d7f7c
   m_configObjects: {}
