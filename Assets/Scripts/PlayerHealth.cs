@@ -11,40 +11,27 @@ public class PlayerHealth : MonoBehaviour
     public int currentHealth;  // Current health of the player
     public Slider healthBar;
 
-    private Vector3 savedPosition;  // Saved position of the player
+    private UIManager _uıManager;
+
 
     private void Start()
     {
-        currentHealth = maxHealth; // Set current health to maximum at the start
+        currentHealth = maxHealth; // Başlangıçta canı maksimum değere ayarla
         UpdateHealthSlider();
-    }
+        
 
-    private void Update()
-    {
-        // Check for the player's death
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
-
-        // Handle saving and loading inputs
-        if (Input.GetKeyDown(KeyCode.F5))
-        {
-            SavePlayerData();
-        }
-        else if (Input.GetKeyDown(KeyCode.F9))
-        {
-            LoadPlayerData();
-        }
     }
 
     public void TakeDamage(int damageAmount)
     {
-        currentHealth -= damageAmount; // Apply damage to the current health
+        currentHealth -= damageAmount; // Hasarı mevcut cana uygula
         Debug.Log(currentHealth);
         UpdateHealthSlider();
+        if (currentHealth <= 0f)
+        {
+            Die();
+        }
     }
-
     private void UpdateHealthSlider()
     {
         if (healthBar != null)
@@ -54,60 +41,17 @@ public class PlayerHealth : MonoBehaviour
             Debug.Log(healthBar.value);
         }
     }
-
     private void Die()
     {
-        // Actions to perform when the player dies
+        _uıManager.GameOver();
         Debug.Log("Player has died.");
-        LoadPlayerData();
-        // Respawn the player with full health
-        Respawn();
-    }
 
-    private void Respawn()
-    {
-        // Reset the player's position to the saved position
-        transform.position = savedPosition;
-
-        // Reset the player's health to full
-        ResetHealth();
+        // Örneğin, oyunu yeniden başlat veya ölüm ekranını göster gibi işlemler yapılabilir.
     }
 
     public void ResetHealth()
     {
         currentHealth = maxHealth;
-        UpdateHealthSlider();
-    }
-
-    public void SavePlayerData()
-    {
-        // Save the player's position and health
-        savedPosition = transform.position;
-        PlayerPrefs.SetFloat("SavedPositionX", savedPosition.x);
-        PlayerPrefs.SetFloat("SavedPositionY", savedPosition.y);
-        PlayerPrefs.SetFloat("SavedPositionZ", savedPosition.z);
-        PlayerPrefs.SetInt("SavedHealth", currentHealth);
-
-        Debug.Log("Player data saved.");
-    }
-
-    public void LoadPlayerData()
-    {
-        // Load the saved player's position and health
-        float savedPositionX = PlayerPrefs.GetFloat("SavedPositionX");
-        float savedPositionY = PlayerPrefs.GetFloat("SavedPositionY");
-        float savedPositionZ = PlayerPrefs.GetFloat("SavedPositionZ");
-        savedPosition = new Vector3(savedPositionX, savedPositionY, savedPositionZ);
-
-        // Set the player's position
-        transform.position = savedPosition;
-
-        currentHealth = PlayerPrefs.GetInt("SavedHealth");
-        UpdateHealthSlider();
-
-        Debug.Log("Player data loaded.");
-
-        // Restart the current scene
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
+
