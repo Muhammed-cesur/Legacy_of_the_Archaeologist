@@ -1500,7 +1500,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5424151848458569000}
-  m_LocalRotation: {x: -0.11957267, y: -0.640698, z: 0.10193688, w: -0.7515433}
+  m_LocalRotation: {x: -0.11957267, y: -0.640698, z: 0.10193688, w: -0.75154334}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2432,11 +2432,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 726bcf21025adab478d4c662ba4826f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healEffect: {fileID: 0}
-  powerEffect: {fileID: 0}
-  swordCode: {fileID: 0}
-  playerHealth: {fileID: 0}
-  quickInventorySlots: []
+  healEffect: {fileID: 422771502953512236, guid: 039dddcb8d4085742a578032acf62909, type: 3}
+  powerEffect: {fileID: 167748514521946624, guid: 19f3d879022765c4eb361cfac054f127, type: 3}
+  swordCode: {fileID: 4341384089052946091}
+  wall: {fileID: 0}
+  playerHealth: {fileID: 840030163339152963}
+  quickInventorySlots:
+  - {fileID: 5662333279100532861, guid: 90856561cb998bb468391e96e05df07b, type: 3}
+  - {fileID: 439726086457075563, guid: 5c5e977a64542254da21148f61cc2a5b, type: 3}
+  - {fileID: 3761745242275073796, guid: 19e2646e0ee4b8a46a0ad5fb9dd8d314, type: 3}
   redItems: []
   blueItems: []
   greenItems: []
