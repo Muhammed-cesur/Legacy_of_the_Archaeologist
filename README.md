@@ -83,7 +83,7 @@ Haritanın yoğun dizaynı dolayısıyla oynanışta sıkıntı çıkmış, diza
 ![Backlog_3](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/857febf5-9a17-4e59-aeaa-fc7046b009a2)
 
 - **Ürün Durumu**: Ekran görüntüleri:
-  ![Screenshot 1](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/a23d9323-4dcd-4fd0-8003-a334f3c3c80f)
+  ![İsimsiz-video-‐-Clipchamp-ile-yapıldı](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/294ab795-3b68-45a5-9acb-f21acbf9eba3)
   ![Screenshot 2](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/8574e570-5348-4c62-9f01-2a83d754b309)
   ![Screenshot 3](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/d9535842-0700-4096-a556-a9038d8581ec)
   
