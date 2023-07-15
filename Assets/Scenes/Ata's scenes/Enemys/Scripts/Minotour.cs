@@ -247,7 +247,7 @@ public class Minotour : MonoBehaviour
         float dropChance = Random.value;
 
         // Define the drop chance threshold for the item
-        float itemDropChance = 0.7f; // Adjust this value as desired
+        float itemDropChance = 1f; // Adjust this value as desired
 
         // Check if the drop chance is within the item drop chance threshold
         if (dropChance <= itemDropChance)
@@ -257,6 +257,7 @@ public class Minotour : MonoBehaviour
 
             // Instantiate the item drop prefab at the enemy's position
             GameObject itemDrop = Instantiate(itemDropPrefab, transform.position, Quaternion.identity);
+            itemDrop.SetActive(true);
 
             // Access the item drop script on the instantiated object
             // ItemDrop itemDropScript = itemDrop.GetComponent<ItemDrop>();
