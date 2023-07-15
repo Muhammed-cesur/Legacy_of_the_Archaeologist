@@ -67,10 +67,8 @@ public class PlayerHealth : MonoBehaviour
         
         
         //StartCoroutine(uıManager.GameOverCoroutine(2f));
-
-        
         // Respawn the player with full health
-        Respawn();
+       // Respawn();
     }
     
     

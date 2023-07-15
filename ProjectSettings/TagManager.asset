@@ -11,6 +11,7 @@ TagManager:
   - Blue
   - Green
   - PickupItem
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Dialog
   - 
   - 
   - 

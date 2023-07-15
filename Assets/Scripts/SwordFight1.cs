@@ -7,7 +7,7 @@ public class SwordFight : MonoBehaviour
     private Animator animator;
     private bool isAttacking;
     private float lastClickTime;
-    private float maxComboDelay = 0.5f; 
+    private float maxComboDelay = 0.5f;
 
     private void Start()
     {
@@ -16,27 +16,15 @@ public class SwordFight : MonoBehaviour
 
     private void Update()
     {
-       
+
         if (Input.GetMouseButtonDown(0))
         {
-            
-            if (Time.time - lastClickTime <= maxComboDelay)
-            {
-             
-                ComboAttack();
-            }
-            else
-            {
-              
-                Attack();
-            }
+            Attack();
 
-          
-            lastClickTime = Time.time;
         }
         else if (!isAttacking)
         {
-            
+
             Idle();
         }
     }
@@ -44,12 +32,6 @@ public class SwordFight : MonoBehaviour
     private void Attack()
     {
         animator.SetTrigger("Attack1");
-        isAttacking = true;
-    }
-
-    private void ComboAttack()
-    {
-        animator.SetTrigger("Attack2");
         isAttacking = true;
     }
 
