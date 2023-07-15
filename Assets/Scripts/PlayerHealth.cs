@@ -12,7 +12,6 @@ public class PlayerHealth : MonoBehaviour
     private UIManager uıManager;
     private Vector3 savedPosition;  // Saved position of the player
     private Animator _Anim;
-
     private void Start()
     {
         uıManager = FindObjectOfType<UIManager>();
@@ -28,8 +27,7 @@ public class PlayerHealth : MonoBehaviour
         // Check for the player's death
         if (currentHealth <= 0)
         {
-            Die();
-            _Anim.SetTrigger("Die"); 
+            StartCoroutine(DeathWaited(4.5f));
         }
 
         // Handle saving and loading inputs
@@ -60,11 +58,23 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+
+    IEnumerator DeathWaited(float delay)
+    {
+       
+        _Anim.SetBool("isDead", true);
+        
+        yield return new WaitForSeconds(delay);
+        
+        StartCoroutine(uıManager.GameOverCoroutine(2f));
+
+    }
     public void Die()
     {
         // Actions to perform when the player dies
         Debug.Log("Player has died.");
-        
+       
+
         
         //StartCoroutine(uıManager.GameOverCoroutine(2f));
         // Respawn the player with full health
