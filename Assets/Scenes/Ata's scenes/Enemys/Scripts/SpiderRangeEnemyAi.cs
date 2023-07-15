@@ -224,6 +224,7 @@ public class SpiderRangeEnemyAI : MonoBehaviour
 
             // Instantiate the item drop prefab at the enemy's position
             GameObject itemDrop = Instantiate(itemDropPrefab, transform.position, Quaternion.identity);
+            itemDrop.SetActive(true);
 
             // Access the item drop script on the instantiated object
             // ItemDrop itemDropScript = itemDrop.GetComponent<ItemDrop>();
