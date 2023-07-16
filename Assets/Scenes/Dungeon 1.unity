@@ -16565,6 +16565,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3258558712466266569, guid: 3f18c5af4da82464c94b066923315385, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1778048621}
+    - target: {fileID: 3258558712466266569, guid: 3f18c5af4da82464c94b066923315385, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ReloadScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 3258558712466266569, guid: 3f18c5af4da82464c94b066923315385, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UIManager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4266062595857051621, guid: 3f18c5af4da82464c94b066923315385, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -24090,6 +24102,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 936655011711060175, guid: 5e10be2f5a748844dbd0b2b7e6fafd4a, type: 3}
   m_PrefabInstance: {fileID: 1777420817}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1778048621 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5332443801239872964, guid: 3f18c5af4da82464c94b066923315385, type: 3}
+  m_PrefabInstance: {fileID: 1219783451}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6bf687fd13ba3d4a8945d709fa51910, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1778719716 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3804289014858123016, guid: 32a5fcef90647294bb8d8356f42b7e16, type: 3}
@@ -26892,11 +26915,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9207188251001636573, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.049443554
+      value: -0.049443506
       objectReference: {fileID: 0}
     - target: {fileID: 9207188251001636573, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.007817444
+      value: 0.007817437
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
