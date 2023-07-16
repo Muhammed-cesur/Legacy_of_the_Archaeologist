@@ -127,6 +127,6 @@ Oyunun sadece demo sürümü olduğu için save sisteminden vazgeçildi ve daha 
   - Takım içindeki görev dağılımıyla ve öncelikli görevlerle ilgili düzenleme yapılması kararı alınmıştır. 
 
 -**Diğer Notlar**:
-- Game Artistimizin yaptığı modeller ayrı bir klasörde belirtilmiştir.
+- Game Artistimiz Dilara Arkan'ın yaptığı tasarımlar Dilara Lota Tasarım klasöründe belirtilmiştir.
 
 ---
