@@ -39357,26 +39357,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 38.736244, y: 3.7401886, z: 1.8911481}
   m_Center: {x: -45.840355, y: 1.3700943, z: -0.4455828}
---- !u!1 &1034263048 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1971323337377913477, guid: 3f18c5af4da82464c94b066923315385, type: 3}
-  m_PrefabInstance: {fileID: 637260307540126044}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1034263051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1034263048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9acde2f1df977d94483c6eb0546cff16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCanvas: {fileID: 0}
-  CreditsCanvas: {fileID: 0}
-  OptionsCanvas: {fileID: 0}
 --- !u!1001 &1039308101
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78720,14 +78700,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6724337432540073275, guid: 3f18c5af4da82464c94b066923315385, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1034263051}
-    - target: {fileID: 6724337432540073275, guid: 3f18c5af4da82464c94b066923315385, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: QuitGame
-      objectReference: {fileID: 0}
     - target: {fileID: 7540844984862289827, guid: 3f18c5af4da82464c94b066923315385, type: 3}
       propertyPath: m_Name
       value: GenelUI
@@ -78743,10 +78715,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1971323337377913477, guid: 3f18c5af4da82464c94b066923315385, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1034263051}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3f18c5af4da82464c94b066923315385, type: 3}
 --- !u!23 &656918587437917318
 MeshRenderer:
