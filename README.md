@@ -6,10 +6,10 @@ LOTA Games
 
 ## Takım Elemanları
 
-- Muhammed Cesur: Product Owner/Developer/Game Designer
-- Süeda Karaoğlu: Scrum Master/Delevoper
-- Mehmet Furkan Acer: Team Member/Developer/Game Designer
-- Dilara Arkan: Team Member/Developer/Game Designer
+- Süeda Karaoğlu: Scrum Master/Developer
+- Muhammed Cesur: Product Owner/Developer/Level Designer
+- Mehmet Furkan Acer: Team Member/Developer/Level Designer
+- Dilara Arkan: Team Member/Developer/Game Artist
 - Ata Güneş: Team Member/Developer
 
 ## Ürün İsmi
@@ -18,15 +18,19 @@ Legacy of the Archaeologist
 
 ## Ürün Açıklaması
 
-- Oyun bir Third Person RPG ve bulmacaları çözerken gizemli bir adayı keşfettiğiniz bir keşif-macera oyunudur. Low poly grafiklere sahip olan oyunda, açık bir dünyada maceralara atılabilir ve bulmacaları çözebilirsiniz. Oyunda, çevreyle etkileşime geçmeli ve sırları ortaya çıkarmalısınız.
-Karakterimiz gezgin bir arkeolog ve kullandığı aletler ile oyun ilerledikçe daha da geliştirilebilir envantere sahip olacak. Bu aletler etkileşimi tetikleyecek. Mistik parçaları ve taşları koruyan canavarlarla dövüşeceğiz.
+(Oyunun demo sürümüdür.)
+
+Arkeolog'umuz, uzun yıllar boyunca başarı elde edememesine rağmen, yılmadan kazılara devam etmiş biridir. Bir gün gizemli bir adanın keşfi için bir iş teklifi alır. Bu adada bulunan tarihsel değerleri keşfetmek için deneyimli bir araştırmacı aranmaktadır. Ancak iş teklifinin şimdiye kadar alınmamış olmasının nedeni adada tehlikeli yaratıkların bulunmasıdır. Adanın yerli halkı, bu tehlikeli yaratıkları ortadan kaldırmak için yardım istemektedir. Bunun karşılığında ise Arkeolog'a adalarında keşif yapma izni verilecektir.
+
+Arkeolog bu fırsatı değerlendirmeye karar verir. Sırtına kılıcını takar, hazırlıklarını tamamlar ve adaya doğru yola çıkar. Uzun bir okyanus yolculuğu sonunda haritanın gösterdiği yere ulaşır ve yerlilerin tavsiyeleriyle adayı keşfetmeye başlar. Adada ilerledikçe tarihi zindanları ve bir tapınağı keşfeder.
+Ancak adanın derinliklerinde daha büyük bir gizem onu beklemektedir.
 
 ## Ürün Özellikleri
 
 - Action RPG
 - Third Person 
 - Low Poly
-- Adventure-Puzzle
+- Adventure
 
 ## Hedef Kitle
 
@@ -60,7 +64,7 @@ Karakterimiz gezgin bir arkeolog ve kullandığı aletler ile oyun ilerledikçe 
 
 
 - **Sprint Review**: 
-Haritanın yoğun dizaynı dolayısıyla oynanışta sıkıntı çıkmış, dizaynı sadeleştirmeye karar verilmiştir. Parşömen yetişmediği için bağlantılı iki görev ve öncelikli olmadığı karar verilen bir görev ertelenmiştir. Hazırlanan mekanikler karakter modeliyle sıkıntı çıkardığı ve düzeltilmesi gerektiği için de bir görev daha ertelenmek zorunda kalındı. Sprint Review katılımcıları: Süeda Karaoğlu, Muhammed Cesur, Mehmet Furkan Acer.
+Haritanın yoğun dizaynı dolayısıyla oynanışta sıkıntı çıkmış, dizaynı sadeleştirmeye karar verilmiştir. Bağlantılı birkaç görevin aksamından dolayı birkaç görev diğer sprinte ertelendi. Review katılımcıları: Süeda Karaoğlu, Muhammed Cesur, Mehmet Furkan Acer, Dilara Arkan, Ata Güneş.
 
 - **Sprint Retrospective:**
   - Takım içindeki görev dağılımıyla ve öncelikli görevlerle ilgili düzenleme yapılması kararı alınmıştır.
@@ -97,5 +101,32 @@ Harita çok büyük olduğu için küçültüldü. Eksiklikler/Unutulanlar gör�
 ---
 
 # Sprint 3
+
+- **Sprint Notları**: Eksik kalan görevler, değiştiriwlen birkaç içerik için görev dağılımı yapıldı. Sprint boyunca herkes aktif şekilde çalıştı.
+
+- **Sprint içinde tamamlanması tahmin edilen puan**: 160 Puan
+
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint3.docx](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/files/12059060/Sprint3.docx)
+
+- **Sprint board update**: Sprint board screenshotları: 
+![Backlog_9](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/d9bfac33-d12e-4eac-8198-cb1320ece2cb) 
+![Backlog_10](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/142eca7d-a0b3-483f-a533-934dd2d0a4d8) 
+![Backlog_11](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/d6189f63-2c38-41f2-bdda-53a967ec754c)
+
+- **Ürün Durumu**: Ekran görüntüleri:
+![yerlesimyeri](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/b50572d8-5266-47c3-94e8-5aaf7df33e50)
+![Ekran görüntüsü 2023-07-16 233914](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/97ac4074-0081-4a45-b352-3051b3ed35c1)
+![Ekran görüntüsü 2023-07-16 233200](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/1c9f9129-7dfe-4a4a-8a3e-8f6adaf6b740)
+![7srwfp](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/9a833180-5098-4424-98ba-7cda308bc8fe)
+
+- **Sprint Review**: 
+Oyunun sadece demo sürümü olduğu için save sisteminden vazgeçildi ve daha öncelikli görevler edinildi. Oyun sürekli test edildi ve hatalar giderildi. Unity dosyaları düzenlendi ve fazla, deneme dosyaları kaldırıldı. Son haftada hatalar ve eksikliklerin düzenlenmesine ayrılacak. Review katılımcıları: Süeda Karaoğlu, Muhammed Cesur, Mehmet Furkan Acer, Dilara Arkan, Ata Güneş.
+
+
+- **Sprint Retrospective:**
+  - Takım içindeki görev dağılımıyla ve öncelikli görevlerle ilgili düzenleme yapılması kararı alınmıştır. 
+
+-**Diğer Notlar**:
+- Game Artistimizin yaptığı modeller ayrı bir klasörde belirtilmiştir.
 
 ---
