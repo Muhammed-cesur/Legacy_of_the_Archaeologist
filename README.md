@@ -44,13 +44,13 @@ Ancak adanın derinliklerinde daha büyük bir gizem onu beklemektedir.
 
 # Sprint 1
 
-- **Sprint Notları**: 08.06.23 tarihinde oyuna karar verildi. Planlama ve görev atama yapıldı, proje yönetim aracı olarak miro tercih edildi. Görevler ve ayrıntıları Miro'dan her gün takip ediliyor. Mavi renk görevler programlama, kırmızı renk görevler genel, mor renk görevler ise kullanıcı hikayeselerini ifade etmektedir. İlk sprint için kullanıcı hikayesi bulamadık.
+- **Sprint Notları**: 08.06.23 tarihinde oyuna karar verildi. Planlama ve görev atama yapıldı, proje yönetim aracı olarak miro tercih edildi. Görevler ve ayrıntıları Miro'dan her gün takip edilmektedir. Mavi renk görevler programlama, kırmızı renk görevler genel, mor renk görevler ise kullanıcı hikayelerini ifade etmektedir. İlk sprint için kullanıcı hikayesi bulamadık.
 
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100 Puan
 
 - **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 400 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde ilk sprint'in en azından 100 ile başlaması gerektiğine karar verildi.
 
-- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: [Sprint1.docx](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/files/11782019/Sprint1.docx)
+- **Daily Scrum**: Daily Scrum toplantılarının zamansal sebeplerden ötürü Discord üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği, Readme'de jpeg veya word olarak tarafımızdan paylaşılmıştır. [Sprint1.docx](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/files/11782019/Sprint1.docx)
 
 - **Sprint board update**: Sprint board screenshotları: 
 ![Backlog_1](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/a645433d-00a3-4393-a249-414db8998d1a) 
@@ -114,13 +114,13 @@ Harita çok büyük olduğu için küçültüldü. Eksiklikler/Unutulanlar gör�
 ![Backlog_11](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/d6189f63-2c38-41f2-bdda-53a967ec754c)
 
 - **Ürün Durumu**: Ekran görüntüleri:
-![yerlesimyeri](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/b50572d8-5266-47c3-94e8-5aaf7df33e50)
+![ezgif com-optimize](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/673b62e3-dca2-440c-ac2a-379d03e9e023)
 ![Ekran görüntüsü 2023-07-16 233914](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/97ac4074-0081-4a45-b352-3051b3ed35c1)
 ![Ekran görüntüsü 2023-07-16 233200](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/1c9f9129-7dfe-4a4a-8a3e-8f6adaf6b740)
-![7srwfp](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/9a833180-5098-4424-98ba-7cda308bc8fe)
+![ezgif com-video-to-gif](https://github.com/Muhammed-cesur/Legacy_of_the_Archaeologist/assets/129886119/d60cba8e-2ed2-4ec0-bcb1-75fc1d6bd5fc)
 
 - **Sprint Review**: 
-Oyunun sadece demo sürümü olduğu için save sisteminden vazgeçildi ve daha öncelikli görevler edinildi. Oyun sürekli test edildi ve hatalar giderildi. Unity dosyaları düzenlendi ve fazla, deneme dosyaları kaldırıldı. Son haftada hatalar ve eksikliklerin düzenlenmesine ayrılacak. Review katılımcıları: Süeda Karaoğlu, Muhammed Cesur, Mehmet Furkan Acer, Dilara Arkan, Ata Güneş.
+Oyunun sadece demo sürümü olduğu için save sisteminden vazgeçildi ve daha öncelikli görevler edinildi. Oyun sürekli test edildi ve hatalar giderildi. Unity dosyaları düzenlendi ve fazla dosyalar kaldırıldı. Son haftada hatalar ve eksikliklerin düzenlenmesine ayrılacak. Review katılımcıları: Süeda Karaoğlu, Muhammed Cesur, Mehmet Furkan Acer, Dilara Arkan, Ata Güneş.
 
 
 - **Sprint Retrospective:**
