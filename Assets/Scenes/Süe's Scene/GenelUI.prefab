@@ -1077,6 +1077,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2942817619473104070, guid: 9fb2faa1e2e384049a520bd957a6a616, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3139948577624357416}
     - target: {fileID: 7894723824723190337, guid: 9fb2faa1e2e384049a520bd957a6a616, type: 3}
       propertyPath: m_SizeDelta.x
       value: 50
@@ -1200,8 +1204,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7988493406127303544, guid: 9fb2faa1e2e384049a520bd957a6a616, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3139948577624357416}
   m_SourcePrefab: {fileID: 100100000, guid: 9fb2faa1e2e384049a520bd957a6a616, type: 3}
+--- !u!1 &1971323337377913477 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7988493406127303544, guid: 9fb2faa1e2e384049a520bd957a6a616, type: 3}
+  m_PrefabInstance: {fileID: 8468834711745966589}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3139948577624357416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971323337377913477}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9acde2f1df977d94483c6eb0546cff16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCanvas: {fileID: 0}
+  CreditsCanvas: {fileID: 0}
+  OptionsCanvas: {fileID: 0}
 --- !u!4 &6091202232800409555 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2382145150085219886, guid: 9fb2faa1e2e384049a520bd957a6a616, type: 3}
