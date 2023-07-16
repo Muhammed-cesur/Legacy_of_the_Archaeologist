@@ -123,6 +123,10 @@ public class UIManager : MonoBehaviour
         gameOverCanvas.enabled = false;
         ToggleGamePause();
     }
+    public void GoMainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
     
     
 }
