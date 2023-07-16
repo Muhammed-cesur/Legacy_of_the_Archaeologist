@@ -2964,11 +2964,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 722902453687832472, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000008426521
+      value: -0.000000008426519
       objectReference: {fileID: 0}
     - target: {fileID: 722902453687832472, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000017345475
+      value: 0.0000000017345472
       objectReference: {fileID: 0}
     - target: {fileID: 822635678800970023, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_RootOrder
@@ -30157,12 +30157,16 @@ PrefabInstance:
       objectReference: {fileID: 439554644}
     - target: {fileID: 1993350604390322660, guid: c0945af889ec32e48bc54f67ce9d3315, type: 3}
       propertyPath: diyaloglar.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1993350604390322660, guid: c0945af889ec32e48bc54f67ce9d3315, type: 3}
       propertyPath: diyaloglar.Array.data[0]
       value: A native had entered here before. He mentioned the presence of colored
         cauldrons.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1993350604390322660, guid: c0945af889ec32e48bc54f67ce9d3315, type: 3}
+      propertyPath: diyaloglar.Array.data[1]
+      value: To pick up and drop an item, you can use the "Space" key.
       objectReference: {fileID: 0}
     - target: {fileID: 3879577137723328818, guid: c0945af889ec32e48bc54f67ce9d3315, type: 3}
       propertyPath: m_RootOrder
