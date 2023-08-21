@@ -3035,7 +3035,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 225131336}
-  m_LocalRotation: {x: 0.064116694, y: -0.000000035173322, z: 0.0000000022598468, w: 0.99794245}
+  m_LocalRotation: {x: 0.064116694, y: 0.000000035173322, z: -0.0000000022598468, w: 0.99794245}
   m_LocalPosition: {x: -0.6346805, y: 1.9517242, z: 2.9987848}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -26632,7 +26632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9180388316913693353, guid: 53af1fc2cbbe49649880cd6f0c8526b6, type: 3}
       propertyPath: diyaloglar.Array.data[0]
-      value: I heard that the chests in the dungeon are filled.
+      value: "Zindandaki sand\u0131klar\u0131n i\xE7inin dolu oldu\u011Funu duymu\u015Ftum."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -26875,11 +26875,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6878799890013090778, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.04995474
+      value: -0.0499547
       objectReference: {fileID: 0}
     - target: {fileID: 6878799890013090778, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0032095353
+      value: 0.003209533
       objectReference: {fileID: 0}
     - target: {fileID: 7608553586541387801, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: healthBar
