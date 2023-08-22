@@ -2964,11 +2964,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 722902453687832472, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.000000008426521
+      value: -0.000000008426519
       objectReference: {fileID: 0}
     - target: {fileID: 722902453687832472, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000000017345475
+      value: 0.0000000017345472
       objectReference: {fileID: 0}
     - target: {fileID: 822635678800970023, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_RootOrder
@@ -3072,19 +3072,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6878799890013090778, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9979345
+      value: 0.99769485
       objectReference: {fileID: 0}
     - target: {fileID: 6878799890013090778, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.064239256
+      value: 0.06786056
       objectReference: {fileID: 0}
     - target: {fileID: 6878799890013090778, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0.000000026662459
+      value: -0.000000004291679
       objectReference: {fileID: 0}
     - target: {fileID: 6878799890013090778, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.0000000017163216
+      value: 2.9190866e-10
       objectReference: {fileID: 0}
     - target: {fileID: 7827959040236087930, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_Name
@@ -17432,8 +17432,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1165957108}
-  m_LocalRotation: {x: 0.06423925, y: -0.000000040628592, z: 0.0000000026153517, w: 0.9979345}
-  m_LocalPosition: {x: -6.6766315, y: -3.0368402, z: 3.1772025}
+  m_LocalRotation: {x: 0.067860566, y: -0.0000000042916795, z: 2.919087e-10, w: 0.99769485}
+  m_LocalPosition: {x: -6.6766315, y: -3.027058, z: 3.1772013}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17852,13 +17852,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9180388316913693353, guid: 53af1fc2cbbe49649880cd6f0c8526b6, type: 3}
       propertyPath: diyaloglar.Array.data[0]
-      value: "Hey! Sana tap\u0131na\u011F\u0131 a\xE7man i\xE7in anahtar verdiler
-        mi? Anahtar k\xF6y\xFCm\xFCzde bir yerde olmal\u0131."
+      value: Hey! Did they give you the key to open the temple? The key should be
+        somewhere in our village.
       objectReference: {fileID: 0}
     - target: {fileID: 9180388316913693353, guid: 53af1fc2cbbe49649880cd6f0c8526b6, type: 3}
       propertyPath: diyaloglar.Array.data[1]
-      value: "Par\u015F\xF6meninizde g\xF6sterilen yolu takip ederseniz k\xF6y\xFCm\xFCze
-        ula\u015Facaks\u0131n\u0131z."
+      value: If you follow the path shown on your parchment, you will reach our village.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -30162,12 +30161,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1993350604390322660, guid: c0945af889ec32e48bc54f67ce9d3315, type: 3}
       propertyPath: diyaloglar.Array.data[0]
-      value: "Zindandaki sand\u0131klar\u0131n i\xE7inin dolu oldu\u011Funu duymu\u015Ftum."
+      value: A native had entered here before. He mentioned the presence of colored
+        cauldrons.
       objectReference: {fileID: 0}
     - target: {fileID: 1993350604390322660, guid: c0945af889ec32e48bc54f67ce9d3315, type: 3}
       propertyPath: diyaloglar.Array.data[1]
-      value: "Bir \xF6\u011Feyi almak ve b\u0131rakmak i\xE7in \"Bo\u015Fluk\" tu\u015Funu
-        kullanabilirsiniz."
+      value: To pick up and drop an item, you can use the "Space" key.
       objectReference: {fileID: 0}
     - target: {fileID: 3879577137723328818, guid: c0945af889ec32e48bc54f67ce9d3315, type: 3}
       propertyPath: m_RootOrder

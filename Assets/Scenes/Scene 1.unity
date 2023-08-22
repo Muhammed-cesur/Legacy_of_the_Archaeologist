@@ -154,7 +154,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1993350604390322660, guid: c0945af889ec32e48bc54f67ce9d3315, type: 3}
       propertyPath: diyaloglar.Array.data[1]
-      value: "Sondaki  evin etraf\u0131nda g\xF6rd\xFCm."
+      value: I saw it around the last house.
       objectReference: {fileID: 0}
     - target: {fileID: 3879577137723328818, guid: c0945af889ec32e48bc54f67ce9d3315, type: 3}
       propertyPath: m_RootOrder
@@ -4924,8 +4924,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 137433451}
-  m_LocalRotation: {x: 0.059456423, y: -0.0060055144, z: 0.00035770578, w: 0.99821275}
-  m_LocalPosition: {x: 210.87039, y: 4.5008903, z: 103.59485}
+  m_LocalRotation: {x: 0.05748196, y: -0.0055986126, z: 0.00032235726, w: 0.9983308}
+  m_LocalPosition: {x: 364.84796, y: 4.328331, z: 157.13892}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4966,11 +4966,11 @@ PrefabInstance:
       objectReference: {fileID: 976137168}
     - target: {fileID: 970529454418257796, guid: 4cd9636ca389f82479e75ec5c9360fe9, type: 3}
       propertyPath: diyaloglar.Array.data[0]
-      value: "\u0130\xE7eri girmeden seni uyarmak istedim yabanc\u0131."
+      value: Before you enter, stranger, I wanted to warn you.
       objectReference: {fileID: 0}
     - target: {fileID: 970529454418257796, guid: 4cd9636ca389f82479e75ec5c9360fe9, type: 3}
       propertyPath: diyaloglar.Array.data[1]
-      value: "Daha \xF6nce bu tap\u0131na\u011Fa giren kimse geri d\xF6nmedi."
+      value: 'No one who has entered this temple has ever returned. '
       objectReference: {fileID: 0}
     - target: {fileID: 8327623957831124913, guid: 4cd9636ca389f82479e75ec5c9360fe9, type: 3}
       propertyPath: m_RootOrder
@@ -44285,7 +44285,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5242748085943340770, guid: 615654d844d67d94382e4b839dae904a, type: 3}
       propertyPath: diyaloglar.Array.data[0]
-      value: "Zindanlar\u0131 temizlediysen devam edebilirsin. "
+      value: If you have cleared the dungeons, you can proceed.
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -67718,19 +67718,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 722902453687832472, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.8240261
+      value: -0.82482946
       objectReference: {fileID: 0}
     - target: {fileID: 722902453687832472, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.1882115
+      value: -0.18535961
       objectReference: {fileID: 0}
     - target: {fileID: 722902453687832472, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5273149
+      value: 0.5273751
       objectReference: {fileID: 0}
     - target: {fileID: 722902453687832472, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.08658242
+      value: -0.084697574
       objectReference: {fileID: 0}
     - target: {fileID: 822635678800970023, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_RootOrder
@@ -67846,7 +67846,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6812844629470856525, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.9455185
+      value: 5.9455175
       objectReference: {fileID: 0}
     - target: {fileID: 6812844629470856525, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalPosition.z
@@ -67854,19 +67854,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6878799890013090778, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.8387411
+      value: -0.8391089
       objectReference: {fileID: 0}
     - target: {fileID: 6878799890013090778, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.075937316
+      value: -0.074297555
       objectReference: {fileID: 0}
     - target: {fileID: 6878799890013090778, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5389908
+      value: 0.53867626
       objectReference: {fileID: 0}
     - target: {fileID: 6878799890013090778, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0153566245
+      value: -0.014281269
       objectReference: {fileID: 0}
     - target: {fileID: 7827959040236087930, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_Name
@@ -67878,19 +67878,19 @@ PrefabInstance:
       objectReference: {fileID: 989400106}
     - target: {fileID: 9207188251001636573, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.8318835
+      value: -0.83255345
       objectReference: {fileID: 0}
     - target: {fileID: 9207188251001636573, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.14970773
+      value: -0.1468216
       objectReference: {fileID: 0}
     - target: {fileID: 9207188251001636573, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.5307692
+      value: 0.5307419
       objectReference: {fileID: 0}
     - target: {fileID: 9207188251001636573, guid: 2c801034016263543bc986959ba01b38, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.061979495
+      value: -0.060093895
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -80464,26 +80464,6 @@ PrefabInstance:
       propertyPath: diyalogText
       value: 
       objectReference: {fileID: 7429733932454862043}
-    - target: {fileID: 9180388316913693353, guid: 53af1fc2cbbe49649880cd6f0c8526b6, type: 3}
-      propertyPath: diyaloglar.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9180388316913693353, guid: 53af1fc2cbbe49649880cd6f0c8526b6, type: 3}
-      propertyPath: diyaloglar.Array.data[0]
-      value: "Ho\u015F geldin yabanc\u0131. Ben seni kar\u015F\u0131lamak i\xE7in
-        g\xF6nderilmi\u015F adan\u0131n yerlisiyim. Eline ge\xE7en par\u015F\xF6men
-        de adam\u0131z\u0131n haritas\u0131."
-      objectReference: {fileID: 0}
-    - target: {fileID: 9180388316913693353, guid: 53af1fc2cbbe49649880cd6f0c8526b6, type: 3}
-      propertyPath: diyaloglar.Array.data[1]
-      value: "Aday\u0131 incelemene bir \u015Fartla izin verdi\u011Fimizi unutma.
-        Biz yerliler i\xE7in etraftaki tehlikeli yarat\u0131klar\u0131 \xF6ld\xFCreceksin.
-        Kendin i\xE7in ise girdi\u011Fin zindanlarda anahtar bulman gerekecek."
-      objectReference: {fileID: 0}
-    - target: {fileID: 9180388316913693353, guid: 53af1fc2cbbe49649880cd6f0c8526b6, type: 3}
-      propertyPath: diyaloglar.Array.data[2]
-      value: "Yolculu\u011Funda iyi \u015Fanslar."
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -83349,21 +83329,6 @@ PrefabInstance:
       propertyPath: diyalogText
       value: 
       objectReference: {fileID: 8674345383358087730}
-    - target: {fileID: 1993350604390322660, guid: c0945af889ec32e48bc54f67ce9d3315, type: 3}
-      propertyPath: diyaloglar.Array.data[0]
-      value: "Par\u015F\xF6meni a\xE7mak i\xE7in \"M\", k\u0131l\u0131c\u0131 kullan\u0131p
-        b\u0131rakmak i\xE7in \"Q\","
-      objectReference: {fileID: 0}
-    - target: {fileID: 1993350604390322660, guid: c0945af889ec32e48bc54f67ce9d3315, type: 3}
-      propertyPath: diyaloglar.Array.data[1]
-      value: "can yenileme i\xE7in k\u0131rm\u0131z\u0131 ta\u015F\u0131 \"1\", k\u0131l\u0131c\u0131n
-        g\xFCc\xFCn\xFC artt\u0131rmak i\xE7in ise mavi ta\u015F\u0131 \"2\" tu\u015Fu
-        kullanabilirsin."
-      objectReference: {fileID: 0}
-    - target: {fileID: 1993350604390322660, guid: c0945af889ec32e48bc54f67ce9d3315, type: 3}
-      propertyPath: diyaloglar.Array.data[2]
-      value: "Yolculu\u011Funda iyi \u015Fanslar."
-      objectReference: {fileID: 0}
     - target: {fileID: 3879577137723328818, guid: c0945af889ec32e48bc54f67ce9d3315, type: 3}
       propertyPath: m_RootOrder
       value: 3
